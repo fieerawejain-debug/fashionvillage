@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Village | Heritage Weaves, Royal Silks &amp; Sovereign Drapes</title>
+  <meta name="description" content="Immerse yourself in authentic royal drapes spun from consecrated mulberry filaments and tested metallic silver-gilt zari. Kanchipuram, Banarasi, and daily luxe heirlooms.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       0. Announcement Bar
+       ========================================================================= -->
+  <aside class="top-announcement-bar" role="region" aria-label="Announcements">
+    <div class="announcement-text">
+      <span>COMPLIMENTARY WORLDWIDE SHIPPING ON PURE SILK SAREES ABOVE &#8377;5,000</span>
+      <span class="dot"></span>
+      <span style="color:var(--color-gold-light);">FESTIVE CONNOISSEUR COLLECTION LIVE</span>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       1. Coded Luxury Header Navigation (Crisp, Unclipped & Responsive)
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open Mobile Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Brand Logo (Complete & Sharp Vector Text) -->
+      <a href="index.html" class="brand-logo" aria-label="Fashion Village Home">
+        <span class="brand-name">FASHION VILLAGE</span>
+        <span class="brand-sub">SILKS &amp; SAREES &bull; HERITAGE WEAVES</span>
+      </a>
+
+      <!-- Real Live Interactive Search Box -->
+      <div class="search-container">
+        <div class="search-bar">
+          <span class="search-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </span>
+          <input type="text" id="search-input" class="search-input" placeholder="Search Kanjivaram, Banarasi, Zari silk..." autocomplete="off">
+          <span class="search-pill">PURE SILK</span>
+        </div>
+
+        <!-- Autocomplete Suggestions Dropdown -->
+        <div class="search-dropdown" id="search-dropdown">
+          <div class="dropdown-section-title">Popular Weaves &amp; Edits</div>
+          <div class="dropdown-tags">
+            <span class="dropdown-tag" onclick="triggerSearch('Rudraksha Mayil Kanchipuram')">Rudraksha Mayil</span>
+            <span class="dropdown-tag" onclick="triggerSearch('Banarasi Katan Kadwa')">Banarasi Kadwa</span>
+            <span class="dropdown-tag" onclick="triggerSearch('Tested Zari Bridal')">Tested Zari</span>
+            <span class="dropdown-tag" onclick="triggerSearch('Featherlight Linen Silk')">Everyday Grace</span>
+          </div>
+          <div id="search-live-results">
+            <div class="dropdown-item" onclick="triggerSearch('Bridal Kanchipuram Silk')">
+              <span><strong>Bridal Kanchipuram</strong> Silk Sarees</span>
+              <span style="font-size:11.5px; color:#8C6E18;">120+ Weaves</span>
+            </div>
+            <div class="dropdown-item" onclick="triggerSearch('Varanasi Antique Jangla')">
+              <span><strong>Varanasi Antique</strong> Jangla Weaves</span>
+              <span style="font-size:11.5px; color:#8C6E18;">64 Weaves</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Nav Actions (Store Locator, Currency, Wishlist, Bag, Avatar) -->
+      <div class="header-nav-actions">
+        <!-- Mobile Search Toggle Button -->
+        <button type="button" class="icon-action-btn mobile-search-toggle-btn" id="mobile-search-toggle" title="Search Weaves">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        
+        <!-- Store Locator (Desktop) -->
+        <button type="button" class="nav-action-item" id="store-locator-btn" title="Find a Flagship Boutique">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8C6E18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Store Locator</span>
+        </button>
+
+        <span class="header-v-divider"></span>
+
+        <!-- Currency Switcher (Desktop) -->
+        <div style="position: relative;">
+          <button type="button" class="nav-action-item" id="currency-selector-btn" aria-haspopup="true">
+            <span id="current-currency-label">&#8377; INR (&#8377;)</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="currency-dropdown-box" id="currency-dropdown">
+            <div class="dropdown-item currency-option" data-currency="INR">&#8377; INR (India)</div>
+            <div class="dropdown-item currency-option" data-currency="USD">$ USD (United States)</div>
+            <div class="dropdown-item currency-option" data-currency="EUR">&euro; EUR (Europe)</div>
+            <div class="dropdown-item currency-option" data-currency="GBP">&pound; GBP (UK)</div>
+            <div class="dropdown-item currency-option" data-currency="AED">AED (UAE)</div>
+          </div>
+        </div>
+
+        <span class="header-v-divider"></span>
+
+        <!-- Wishlist (3) -->
+        <button type="button" class="icon-action-btn" id="wishlist-btn" title="Saved Heirlooms (3 Items)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="nav-counter-badge badge-maroon" id="wishlist-count">3</span>
+        </button>
+
+        <!-- Shopping Bag (2) -->
+        <button type="button" class="icon-action-btn" id="cart-btn" title="Shopping Bag (2 Items)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="nav-counter-badge badge-gold" id="cart-count">2</span>
+        </button>
+
+        <!-- VIP Avatar -->
+        <button type="button" class="user-avatar-circle" title="VIP Sovereign Account" onclick="showToast('Welcome to Fashion Village Sovereign Circle')">
+          <img src="assets/avatar.png" alt="VIP Member Avatar">
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Expandable Search Bar -->
+  <div class="mobile-search-bar" id="mobile-search-bar">
+    <div class="search-bar">
+      <span class="search-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </span>
+      <input type="text" id="mobile-search-input" class="search-input" placeholder="Search Kanjivaram, Banarasi, Zari...">
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       2. Section 1: Editorial Hero Section (assets/hero_trimmed.png)
+       ========================================================================= -->
+  <section class="section-bleed bleed-hero" id="hero" aria-labelledby="hero-title">
+    <div class="section-frame">
+      <img src="assets/hero_trimmed.png" alt="Heritage Woven in Silk &amp; Gold - 2025 Sovereign Edit">
+
+      <!-- Badge Hotspot -->
+      <div class="hotspot" style="left: 3.75%; top: 21.5%; width: 23%; height: 4.8%; border-radius: 999px;" onclick="showToast('2025 Sovereign Edit • Hand-curated bridal drapes')"></div>
+
+      <!-- Button 1: EXPLORE ROYAL SILKS → -->
+      <a href="#categories" class="hotspot" style="left: 3.75%; top: 61.7%; width: 14.3%; height: 6.3%;" title="Explore Royal Silks">
+        <span class="hotspot-tooltip">Explore 420+ Royal Silk Weaves &rarr;</span>
+      </a>
+
+      <!-- Button 2: DISCOVER DAILY LUXE WEAR -->
+      <a href="everyday.html" class="hotspot" style="left: 18.8%; top: 61.7%; width: 16.3%; height: 6.3%;" title="Discover Daily Luxe Wear">
+        <span class="hotspot-tooltip">View Featherlight Silhouettes &rarr;</span>
+      </a>
+
+      <!-- Stat Card 1: 10,000+ HANDLOOM DRAPES -->
+      <div class="hotspot" style="left: 3.75%; top: 72.4%; width: 8.8%; height: 10.1%;" onclick="showToast('Over 10,000 consecrated handloom drapes preserved.')" title="10,000+ Handloom Drapes">
+        <span class="hotspot-tooltip">10,000+ Handloom Drapes</span>
+      </div>
+
+      <!-- Stat Card 2: 0.8% PURE SILVER ZARI -->
+      <div class="hotspot" style="left: 12.9%; top: 72.4%; width: 8.8%; height: 10.1%;" onclick="showToast('Certified 0.8% Pure Silver Electroplate Tested Zari.')" title="0.8% Pure Silver Zari">
+        <span class="hotspot-tooltip">0.8% Tested Silver Zari</span>
+      </div>
+
+      <!-- Stat Card 3: 45 Yrs GENERATIONAL GUILD -->
+      <div class="hotspot" style="left: 22.1%; top: 72.4%; width: 8.8%; height: 10.1%;" onclick="showToast('45 Years of generational weaver guild mastery.')" title="45 Yrs Generational Guild">
+        <span class="hotspot-tooltip">45 Yrs Master Loom Guild</span>
+      </div>
+
+      <!-- Product Card Hotspot: "The Rudraksha Mayil Kanchipuram" -->
+      <div class="hotspot hotspot-product" id="hero-product-trigger" style="left: 53.5%; top: 70.9%; width: 29.5%; height: 13.7%;" title="Click to view The Rudraksha Mayil Kanchipuram">
+        <span class="hotspot-tooltip" style="bottom: auto; top: -38px;">Quick View: The Rudraksha Mayil (&#8377;48,500)</span>
+      </div>
+
+      <!-- Tested Zari Swatch Hotspot (Bottom Right) -->
+      <div class="hotspot" id="hero-swatch-trigger" style="left: 83.3%; top: 64.3%; width: 14.8%; height: 26.5%;" title="Inspect Tested Zari Purity Certificate">
+        <span class="hotspot-tooltip" style="bottom: auto; top: -38px;">View Tested Zari Lab Assay</span>
+      </div>
+
+    </div>
+</section>
+
+  <!-- =========================================================================
+       3. Interactive Concierge Banner (Section - Interactive Concierge Banner.png)
+       ========================================================================= -->
+  <section class="section-bleed bleed-concierge" id="concierge" aria-labelledby="concierge-title">
+    <div class="section-frame">
+      <img src="images/Section - Interactive Concierge Banner.png" alt="Bridal Trousseau &amp; Saree Styling Concierge">
+
+      <!-- Left Concierge Info Hotspot -->
+      <a href="concierge.html" class="hotspot" style="left: 3.75%; top: 20%; width: 45%; height: 60%;" title="Learn about Video Concierge Suite"></a>
+
+      <!-- Button 1: BOOK VIDEO APPOINTMENT -->
+      <button type="button" class="hotspot trigger-appointment" style="left: 62.6%; top: 32.7%; width: 17.6%; height: 34.6%;" title="Book Complimentary Private Video Appointment">
+        <span class="hotspot-tooltip">Open Video Suite Booking</span>
+      </button>
+
+      <!-- Button 2: WHATSAPP STYLIST -->
+      <button type="button" class="hotspot trigger-whatsapp" style="left: 81.8%; top: 32.7%; width: 14.4%; height: 34.6%;" title="Chat with Senior Loom Stylist on WhatsApp">
+        <span class="hotspot-tooltip">Instant WhatsApp Stylist Chat</span>
+      </button>
+
+    </div>
+</section>
+
+  <!-- =========================================================================
+       4. Section 3: Category Showcase Grid (Section - 3. Category Showcase Grid.png)
+       ========================================================================= -->
+  <section class="section-bleed bleed-categories" id="categories" aria-labelledby="cat-heading">
+    <div class="section-frame">
+      <img src="images/Section - 3. Category Showcase Grid.png" alt="Pillars of Indian Drapes - Signature Curations Category Showcase">
+
+      <!-- Card 1: Pure Kanjivaram & Temple Silks -->
+      <a href="kanjivaram.html" class="hotspot hotspot-product" style="left: 3.75%; top: 43.2%; width: 22%; height: 48.5%;" title="Explore Pure Kanjivaram &amp; Temple Silks">
+        <span class="hotspot-tooltip">Explore 420+ Kanjivaram Weaves &rarr;</span>
+      </a>
+
+      <!-- Card 2: Banarasi Zari Elegance -->
+      <a href="banarasi.html" class="hotspot hotspot-product" style="left: 27.2%; top: 43.2%; width: 22%; height: 48.5%;" title="Explore Banarasi Zari Elegance">
+        <span class="hotspot-tooltip">Explore 310+ Banarasi Weaves &rarr;</span>
+      </a>
+
+      <!-- Card 3: Everyday & Office Wear -->
+      <a href="everyday.html" class="hotspot hotspot-product" style="left: 50.6%; top: 43.2%; width: 22%; height: 48.5%;" title="Explore Everyday &amp; Office Wear">
+        <span class="hotspot-tooltip">Explore 580+ Everyday Styles &rarr;</span>
+      </a>
+
+      <!-- Card 4: Festive & Celebration Drapes -->
+      <a href="kanjivaram.html" class="hotspot hotspot-product" style="left: 74%; top: 43.2%; width: 22%; height: 48.5%;" title="Explore Festive &amp; Celebration Ensembles">
+        <span class="hotspot-tooltip">Explore 260+ Festive Ensembles &rarr;</span>
+      </a>
+
+    </div>
+</section>
+
+  <!-- =========================================================================
+       5. Section 4: Curated Bestsellers Section (4. Curated Bestsellers Section@2x.png)
+       ========================================================================= -->
+  <section class="section-bleed bleed-bestsellers" id="bestsellers" aria-labelledby="bestsellers-heading">
+    <div class="section-frame">
+      <img src="images/4. Curated Bestsellers Section@2x.png" alt="Curated Bestsellers - Handloom Masterpieces in High Demand">
+
+      <!-- Bestseller Product 1 Hotspot -->
+      <div class="hotspot hotspot-product" style="left: 3.75%; top: 18%; width: 22%; height: 75%;" onclick="openProductQuickView('Kanjivaram Vaira Oosi Brocade', 42000, 'Tested Zari • Royal Emerald &amp; Crimson')">
+        <span class="hotspot-tooltip">Quick View: Vaira Oosi (&#8377;42,000)</span>
+      </div>
+
+      <!-- Bestseller Product 2 Hotspot -->
+      <div class="hotspot hotspot-product" style="left: 27.2%; top: 18%; width: 22%; height: 75%;" onclick="openProductQuickView('Banarasi Katan Shikargah', 58500, 'Pure Silver Weft • Consecrated Mulberry Silk')">
+        <span class="hotspot-tooltip">Quick View: Katan Shikargah (&#8377;58,500)</span>
+      </div>
+
+      <!-- Bestseller Product 3 Hotspot -->
+      <div class="hotspot hotspot-product" style="left: 50.6%; top: 18%; width: 22%; height: 75%;" onclick="openProductQuickView('Tissue Organza Bridal Draping', 34500, 'Featherlight Metallic Sheen • Champagne Gold')">
+        <span class="hotspot-tooltip">Quick View: Tissue Organza (&#8377;34,500)</span>
+      </div>
+
+      <!-- Bestseller Product 4 Hotspot -->
+      <div class="hotspot hotspot-product" style="left: 74%; top: 18%; width: 22%; height: 75%;" onclick="openProductQuickView('Arundhati Korvai Muhurtham Silk', 64000, 'Triple Shuttle Pit Loom • Heritage Mayil Border')">
+        <span class="hotspot-tooltip">Quick View: Arundhati Korvai (&#8377;64,000)</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. Section 5: 'Everyday Grace' Regular Wear Spotlight
+       ========================================================================= -->
+  <section class="section-bleed bleed-everyday" id="everyday-grace" aria-labelledby="everyday-heading">
+    <div class="section-frame">
+      <img src="images/Section - 5. 'Everyday Grace - Regular Wear Spotlight.png" alt="Everyday Grace - Regular Wear Handloom Spotlight">
+
+      <a href="everyday.html" class="hotspot" style="left: 3.75%; top: 82%; width: 20%; height: 8%;" title="Shop Everyday Grace Wardrobe">
+        <span class="hotspot-tooltip">Shop Everyday Grace Edit &rarr;</span>
+      </a>
+
+      <a href="everyday.html" class="hotspot hotspot-product" style="left: 3.75%; top: 22%; width: 44%; height: 55%;" title="Mulmul Cotton &amp; Breathable Linen"></a>
+      <a href="everyday.html" class="hotspot hotspot-product" style="left: 52%; top: 22%; width: 44%; height: 55%;" title="Office Luxe Silk-Linen Co-ords"></a>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Section 6: The Craftsmanship &amp; Weaver Story
+       ========================================================================= -->
+  <section class="section-bleed bleed-craft" id="craftsmanship" aria-labelledby="craft-heading">
+    <div class="section-frame">
+      <img src="images/Section - 6. The Craftsmanship & Weaver Story.png" alt="The Craftsmanship &amp; Weaver Story - Preserving Generational Heritage">
+
+      <button type="button" class="hotspot" style="left: 3.75%; top: 76%; width: 22%; height: 9%;" onclick="openVideoLoomModal()" title="Watch the Master Weaver Guild Documentary">
+        <span class="hotspot-tooltip">&#9658; Watch Master Loom Film (4 Min)</span>
+      </button>
+
+      <a href="story.html" class="hotspot" style="left: 28%; top: 76%; width: 18%; height: 9%;" title="Read Generational Guild History">
+        <span class="hotspot-tooltip">Read Weaver Guild Archives &rarr;</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. Section 7: Customer Testimonials &amp; Press Quotes
+       ========================================================================= -->
+  <section class="section-bleed bleed-testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="section-frame">
+      <img src="images/Section - 7. Customer Testimonials & Press Quotes.png" alt="Customer Testimonials &amp; Vogue, Elle, Architectural Digest Press Quotes">
+
+      <div class="hotspot" style="left: 3.75%; top: 30%; width: 92.5%; height: 55%;" onclick="showToast('Verified Brides &amp; Heirloom Collectors across 34 countries.')" title="Customer Reviews"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. Section 8: Instagram Luxury Lookbook Feed Gallery
+       ========================================================================= -->
+  <section class="section-bleed bleed-instagram" id="lookbook" aria-labelledby="instagram-heading">
+    <div class="section-frame">
+      <img src="images/Section - 8. Instagram Luxury Lookbook Feed Gallery.png" alt="Instagram Luxury Lookbook Feed Gallery @FashionVillageSilks">
+
+      <div class="hotspot" style="left: 3.75%; top: 22%; width: 17%; height: 70%;" onclick="showToast('Tagged: #FashionVillageBride wearing The Rudraksha Mayil')"></div>
+      <div class="hotspot" style="left: 22.5%; top: 22%; width: 17%; height: 70%;" onclick="showToast('Tagged: Reception drapes in Varanasi Gold Organza')"></div>
+      <div class="hotspot" style="left: 41.25%; top: 22%; width: 17%; height: 70%;" onclick="showToast('Tagged: Connoisseur Tested Zari Heirloom Pallu')"></div>
+      <div class="hotspot" style="left: 60%; top: 22%; width: 17%; height: 70%;" onclick="showToast('Tagged: Everyday Grace Mulmul Linen Series')"></div>
+      <div class="hotspot" style="left: 78.75%; top: 22%; width: 17%; height: 70%;" onclick="showToast('Follow @FashionVillageSilks on Instagram')"></div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. Fully Coded Luxury Responsive Footer
+       ========================================================================= -->
+  <footer class="luxury-footer" id="site-footer">
+    
+    <!-- Main Footer 4 Columns -->
+    <div class="footer-main">
+      
+      <!-- Brand & Craftsmanship Column -->
+      <div class="footer-brand-col">
+        <div class="footer-brand-title">FASHION VILLAGE</div>
+        <div class="footer-brand-tagline">SILKS &amp; SAREES</div>
+        <p class="footer-brand-desc">
+          Handcrafted authenticity woven with generational mastery. Fashion Village honors South Asian loom traditions, bringing the world genuine bridal weaves, pure golden zari artistry, and bespoke regal ensembles.
+        </p>
+
+        <!-- Trust Badges (Silk Mark & Handloom Support) -->
+        <div class="footer-badges-row">
+          <div class="footer-trust-badge" title="Certified Pure Silk by Silk Mark Organization of India">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <span>Silk Mark Certified</span>
+          </div>
+          <div class="footer-trust-badge" title="100% Direct Master Weaver Guild Empowerment">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22v-9"></path>
+              <path d="M9 10a5 5 0 0 1 6 0"></path>
+              <path d="M12 13a4 4 0 0 0 4-4 4 4 0 0 0-8 0 4 4 0 0 0 4 4z"></path>
+              <path d="M12 3a9 9 0 0 0-9 9c0 3.5 2 6.5 5 8"></path>
+              <path d="M12 3a9 9 0 0 1 9 9c0 3.5-2 6.5-5 8"></path>
+            </svg>
+            <span>100% Handloom Support</span>
+          </div>
+        </div>
+
+        <!-- Social Channels -->
+        <div class="footer-social-row">
+          <a href="#" class="footer-social-icon" title="Instagram @FashionVillageSilks" onclick="showToast('Follow @FashionVillageSilks on Instagram')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-icon" title="Pinterest Lookbooks" onclick="showToast('Explore our Lookbooks on Pinterest')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0a12 12 0 0 0-4.37 23.18c-.06-.99-.1-2.52.02-3.61l.73-3.11s-.18-.37-.18-.92c0-.86.5-1.5 1.12-1.5.53 0 .78.4.78.88 0 .53-.34 1.33-.51 2.07-.15.61.3 1.11.9 1.11 1.08 0 1.91-1.14 1.91-2.79 0-1.46-1.05-2.48-2.55-2.48-1.74 0-2.76 1.3-2.76 2.65 0 .52.2 1.08.45 1.39.05.06.06.12.04.18l-.17.69c-.03.11-.1.15-.22.1-1.02-.47-1.66-1.95-1.66-3.14 0-2.56 1.86-4.91 5.36-4.91 2.81 0 5 2 5 4.69 0 2.8-1.76 5.05-4.21 5.05-.82 0-1.6-.43-1.86-.94l-.51 1.94c-.18.71-.68 1.6-1.01 2.15A11.99 11.99 0 0 0 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-icon" title="WhatsApp Concierge" onclick="openDrawer(document.getElementById('whatsapp-drawer'))">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.008-.466-1.579-.654-2.597-2.261-2.677-2.367-.077-.105-.635-.847-.635-1.616 0-.769.404-1.148.547-1.306.144-.158.314-.198.418-.198.106 0 .211.002.304.006.098.005.23-.037.36.275.134.321.458 1.116.498 1.198.04.081.067.176.013.282-.053.107-.08.175-.16.269-.08.093-.169.208-.241.279-.08.079-.164.165-.07.327.093.162.417.689.896 1.115.616.549 1.135.719 1.298.8.162.081.258.07.354-.041.096-.111.411-.479.521-.643.111-.164.22-.137.37-.082.15.054.957.451 1.121.533.164.082.274.122.314.19.04.068.04.394-.104.799z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: The Collections -->
+      <div>
+        <div class="footer-col-title">The Collections</div>
+        <ul class="footer-links-list">
+          <li><a href="kanjivaram.html">Kanchipuram Silks</a></li>
+          <li><a href="banarasi.html">Banarasi Brocades</a></li>
+          <li><a href="everyday.html">Chanderi &amp; Tussar</a></li>
+          <li><a href="banarasi.html">Organza &amp; Tissue Drapes</a></li>
+          <li><a href="kanjivaram.html">Heritage Bridal Lehengas</a></li>
+          <li><a href="everyday.html">Handcrafted Daily Kurtas</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Client Concierge -->
+      <div>
+        <div class="footer-col-title">Client Concierge</div>
+        <ul class="footer-links-list">
+          <li><a href="#" onclick="openModal(document.getElementById('store-modal'))">Palace Store Locator</a></li>
+          <li><a href="#" onclick="openModal(document.getElementById('appointment-modal'))">Book a Bridal Stylist</a></li>
+          <li><a href="#" onclick="showToast('Complimentary insured global express shipping on all pure silks.')">Complimentary Global Express</a></li>
+          <li><a href="#" onclick="showToast('Every saree carries certified 100% Tested Silver-Gilt Zari Assay.')">Zari Quality Certification</a></li>
+          <li><a href="#" onclick="showToast('Bespoke pico, fall edging and pure silk blouse customization included.')">Fall, Pico &amp; Blouse Tailoring</a></li>
+          <li><a href="#" onclick="showToast('Bespoke bridal trousseau tracking active for VIP consignments.')">Track Bespoke Consignment</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Private VIP Salon -->
+      <div>
+        <div class="footer-col-title">Private VIP Salon</div>
+        <p class="vip-salon-desc">
+          Receive sovereign invitations to heirloom trunk shows, bridal trousseau launches, and artisanal previews.
+        </p>
+        <form class="vip-salon-form" onsubmit="event.preventDefault(); subscribeNewsletter();">
+          <input type="email" id="newsletter-email" class="vip-salon-input" placeholder="Enter your VIP email..." required>
+          <button type="submit" class="vip-salon-btn">JOIN</button>
+        </form>
+        <div class="vip-salon-note">STRICT PRIVACY. CURATED ROYAL EDITS ONLY.</div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Policy Links -->
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom-inner">
+        <div>&copy; 2025 Fashion Village Silks &amp; Sarees Private Limited. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#" onclick="showToast('Silk Mark Protocol: Verified Pure Natural Mulberry Silk')">SILK MARK PROTOCOL</a>
+          <span>&bull;</span>
+          <a href="#" onclick="showToast('Terms of Heritage Sale: Generational Guild Authenticity Guarantee')">TERMS OF HERITAGE SALE</a>
+          <span>&bull;</span>
+          <a href="#" onclick="showToast('Worldwide Insured Express Delivery via DHL Luxury Express')">WORLDWIDE INSURED SHIPPING</a>
+        </div>
+        <div class="footer-secure-tag">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <span>ENCRYPTED LUXURY GATEWAY</span>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- =========================================================================
+       11. Interactive Modals & Slide-Over Drawers
+       ========================================================================= -->
+
+  <!-- A. Video Concierge Booking Modal -->
+  <div class="modal-overlay" id="appointment-modal" role="dialog" aria-modal="true" aria-labelledby="appt-modal-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      
+      <div class="modal-header">
+        <h2 class="modal-title" id="appt-modal-title">Private Video Concierge Suite</h2>
+        <p class="modal-subtitle">Connect directly with our senior loom curators in Kanchipuram and Varanasi via private 4K video.</p>
+      </div>
+
+      <form id="appointment-form">
+        <div class="modal-body">
+          
+          <div class="form-group">
+            <label class="form-label" for="appt-occasion">Select Occasion</label>
+            <select class="form-select" id="appt-occasion" required>
+              <option value="Bridal Muhurtham">Bridal Muhurtham (Sacred Morning Drapes)</option>
+              <option value="Sangeet &amp; Reception">Sangeet &amp; Reception Elegance</option>
+              <option value="Mother of the Bride">Mother of the Bride Heirloom</option>
+              <option value="Temple Ceremony">Temple Poojas &amp; Family Milestone</option>
+              <option value="Trousseau Curation">Full 7-Drape Wedding Trousseau</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Preferred Video Time Slot (IST)</label>
+            <div class="slot-pills-grid">
+              <div class="slot-pill selected">11:00 AM &ndash; 11:30 AM</div>
+              <div class="slot-pill">02:30 PM &ndash; 03:00 PM</div>
+              <div class="slot-pill">05:00 PM &ndash; 05:30 PM</div>
+              <div class="slot-pill">07:30 PM &ndash; 08:00 PM</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="appt-name">Full Name</label>
+            <input type="text" id="appt-name" class="form-input" placeholder="e.g. Radhika Sundaram" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="appt-phone">WhatsApp Number (For HD Video Call)</label>
+            <input type="tel" id="appt-phone" class="form-input" placeholder="+91 98765 43210" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="appt-notes">Special Preferences (Color palette, Zari type)</label>
+            <textarea id="appt-notes" class="form-textarea" rows="2" placeholder="e.g. Traditional Crimson &amp; Mustard Korvai border, heavy Tested Zari pallu"></textarea>
+          </div>
+
+        </div>
+
+        <div style="padding: 16px 28px 24px; display: flex; justify-content: flex-end; gap: 12px; border-top: 1px solid #EBE5DF;">
+          <button type="button" class="btn-submit" style="background:#FAF8F5; color:#201817; border:1px solid #CCC;" onclick="closeModal(document.getElementById('appointment-modal'))">Cancel</button>
+          <button type="submit" class="btn-submit">Confirm Video Slot &rarr;</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- B. Product Quick View Modal ("The Rudraksha Mayil Kanchipuram") -->
+  <div class="modal-overlay" id="quick-view-modal" role="dialog" aria-modal="true" aria-labelledby="qv-title">
+    <div class="modal-dialog" style="max-width: 780px;">
+      <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      
+      <div class="modal-body" style="padding: 0;">
+        <div class="quickview-grid">
+          
+          <div style="background:#63000D; padding: 24px; display:flex; align-items:center; justify-content:center;">
+            <img src="assets/hero_swatch_clean.png" alt="Pure Tested Zari Weave Swatch" style="border-radius:6px; box-shadow:0 10px 30px rgba(0,0,0,0.4); max-height:360px; object-fit:cover;">
+          </div>
+
+          <div style="padding: 32px 28px;">
+            <div style="font-size:11px; font-weight:700; letter-spacing:1.5px; color:#8C6E18; text-transform:uppercase;">Bridal Heirlooms Vault</div>
+            <h2 id="qv-title" style="font-family:var(--font-serif); font-size:24px; color:#63000D; margin: 8px 0 14px 0;">The Rudraksha Mayil Kanchipuram</h2>
+            
+            <div style="display:flex; align-items:baseline; gap:12px; margin-bottom:18px;">
+              <span id="qv-price" style="font-size:24px; font-weight:700; color:#201817;" data-inr-price="48500">&#8377;48,500</span>
+              <span style="font-size:16px; color:#9E8F8B; text-decoration:line-through;" data-inr-price="58000">&#8377;58,000</span>
+              <span style="font-size:11px; background:#FEF3C7; color:#92400E; font-weight:700; padding:2px 8px; border-radius:4px;">Handloom Mark</span>
+            </div>
+
+            <p id="qv-desc" style="font-size:13.5px; color:#5D4E4A; line-height:1.6; margin-bottom:20px;">
+              Hand-spun on a traditional triple-shuttle Korvai pit-loom. Woven with sacred Rudraksha motifs and twin Mayil (peacock) medallions along the authentic Ganga-Jamuni border.
+            </p>
+
+            <div style="background:#FAF6F0; border-radius:6px; padding:12px 16px; margin-bottom:24px; font-size:12.5px; color:#4A3F3C;">
+              <div>&bull; <strong>Fabric:</strong> 100% Pure Mulberry Silk (6-ply certified)</div>
+              <div style="margin-top:4px;">&bull; <strong>Zari Purity:</strong> Tested Metallic Silver-Gilt Zari with 24K Gold Electroplating</div>
+              <div style="margin-top:4px;">&bull; <strong>Weaver Time:</strong> 240 Master Artisan Handloom Hours</div>
+            </div>
+
+            <div style="display:flex; gap:12px;">
+              <button type="button" class="btn-submit" id="quick-add-to-bag" style="flex:1;">Add to Shopping Bag</button>
+              <button type="button" class="btn-submit trigger-appointment" style="background:#FAF8F5; color:#63000D; border:1px solid #63000D;" onclick="closeModal(document.getElementById('quick-view-modal'))">Video Trial</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C. Store Locator Modal -->
+  <div class="modal-overlay" id="store-modal" role="dialog" aria-modal="true" aria-labelledby="store-modal-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      
+      <div class="modal-header">
+        <h2 class="modal-title" id="store-modal-title">Bespoke Flagship Salons</h2>
+        <p class="modal-subtitle">Experience the drape, texture, and tested zari in person at our royal pavilions.</p>
+      </div>
+
+      <div class="modal-body">
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          
+          <div style="border:1px solid #ECE4DF; border-radius:6px; padding:16px;">
+            <div style="font-weight:700; color:#63000D; font-size:15px;">Chennai Flagship Pavilion</div>
+            <div style="font-size:13px; color:#6A5B57; margin-top:4px;">No. 42, G.N. Chetty Road, T. Nagar, Chennai &ndash; 600017</div>
+            <div style="font-size:12px; color:#8C6E18; margin-top:6px;">Mon &ndash; Sun: 10:00 AM &ndash; 8:30 PM &bull; Valet Available</div>
+          </div>
+
+          <div style="border:1px solid #ECE4DF; border-radius:6px; padding:16px;">
+            <div style="font-weight:700; color:#63000D; font-size:15px;">Bengaluru Indiranagar Salon</div>
+            <div style="font-size:13px; color:#6A5B57; margin-top:4px;">100ft Road, Defence Colony, Indiranagar, Bengaluru &ndash; 560038</div>
+            <div style="font-size:12px; color:#8C6E18; margin-top:6px;">Mon &ndash; Sun: 10:30 AM &ndash; 9:00 PM &bull; Bridal Lounge</div>
+          </div>
+
+          <div style="border:1px solid #ECE4DF; border-radius:6px; padding:16px;">
+            <div style="font-weight:700; color:#63000D; font-size:15px;">Hyderabad Jubilee Hills Edit</div>
+            <div style="font-size:13px; color:#6A5B57; margin-top:4px;">Road No. 36, Jubilee Hills, Hyderabad &ndash; 500033</div>
+            <div style="font-size:12px; color:#8C6E18; margin-top:6px;">Private Trousseau Suites by Appointment</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- D. Slide-Over Drawers -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- Mobile Navigation Drawer (Luxury High-Fashion Editorial) -->
+  <div class="drawer-container drawer-left" id="mobile-nav-drawer" role="dialog" aria-modal="true" aria-labelledby="mobile-nav-title">
+    <div class="drawer-header">
+      <div class="drawer-brand-wrap">
+        <span class="drawer-brand-eyebrow">FASHION VILLAGE</span>
+        <h2 class="drawer-title" id="mobile-nav-title">Sovereign Vaults</h2>
+      </div>
+      <button type="button" class="drawer-close-btn" aria-label="Close navigation menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Section Label: Curated Collections -->
+      <div class="drawer-section-heading">Heirloom Curations</div>
+
+      <ul class="mobile-nav-list">
+        <!-- 1. 2025 Sovereign Edit -->
+        <li class="mobile-nav-item">
+          <a href="index.html" class="mobile-nav-link active">
+            <div class="mobile-nav-link-content">
+              <div class="mobile-nav-link-title-row">
+                <span class="mobile-nav-link-title" style="color:var(--color-maroon);">2025 Sovereign Edit</span>
+                <span class="mobile-nav-badge">NEW</span>
+              </div>
+              <span class="mobile-nav-link-sub">Autumn / Winter Bridal Edition</span>
+            </div>
+            <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </li>
+
+        <!-- 2. Bridal Kanchipuram -->
+        <li class="mobile-nav-item">
+          <a href="kanjivaram.html" class="mobile-nav-link">
+            <div class="mobile-nav-link-content">
+              <div class="mobile-nav-link-title-row">
+                <span class="mobile-nav-link-title">Bridal Kanchipuram</span>
+              </div>
+              <span class="mobile-nav-link-sub">Pure Korvai &amp; Certified Tested Zari</span>
+            </div>
+            <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </li>
+
+        <!-- 3. Banarasi Heritage -->
+        <li class="mobile-nav-item">
+          <a href="banarasi.html" class="mobile-nav-link">
+            <div class="mobile-nav-link-content">
+              <div class="mobile-nav-link-title-row">
+                <span class="mobile-nav-link-title">Banarasi Heritage</span>
+              </div>
+              <span class="mobile-nav-link-sub">Katan Brocade &amp; Antique Kadwa</span>
+            </div>
+            <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </li>
+
+        <!-- 4. Everyday Grace -->
+        <li class="mobile-nav-item">
+          <a href="everyday.html" class="mobile-nav-link">
+            <div class="mobile-nav-link-content">
+              <div class="mobile-nav-link-title-row">
+                <span class="mobile-nav-link-title">Everyday Grace</span>
+              </div>
+              <span class="mobile-nav-link-sub">Mulmul Cotton &amp; Handloom Linen</span>
+            </div>
+            <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </li>
+
+        <!-- 5. Weaver Craftsmanship -->
+        <li class="mobile-nav-item">
+          <a href="story.html" class="mobile-nav-link">
+            <div class="mobile-nav-link-content">
+              <div class="mobile-nav-link-title-row">
+                <span class="mobile-nav-link-title">Weaver Craftsmanship</span>
+              </div>
+              <span class="mobile-nav-link-sub">45-Year Sacred Guild Archives</span>
+            </div>
+            <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </li>
+
+        <!-- 6. Styling Concierge Suite -->
+        <li class="mobile-nav-item">
+          <a href="concierge.html" class="mobile-nav-link">
+            <div class="mobile-nav-link-content">
+              <div class="mobile-nav-link-title-row">
+                <span class="mobile-nav-link-title" style="color:var(--color-gold-deep);">Styling Concierge Suite</span>
+                <span class="mobile-nav-badge" style="background:#FAF0D7; color:#8C6E18;">4K VIDEO</span>
+              </div>
+              <span class="mobile-nav-link-sub">Private Loom Video Consultations</span>
+            </div>
+            <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Section Label: Client Concierge Actions -->
+      <div class="drawer-actions-box">
+        <div class="drawer-section-heading" style="margin-bottom:8px;">Bespoke Services</div>
+
+        <button type="button" class="drawer-action-btn" onclick="openModal(document.getElementById('store-modal'))">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Find a Flagship Boutique</span>
+        </button>
+
+        <button type="button" class="drawer-action-btn trigger-appointment">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <span>Book Private Video Trial</span>
+        </button>
+
+        <button type="button" class="drawer-action-btn drawer-action-whatsapp trigger-whatsapp">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.008-.466-1.579-.654-2.597-2.261-2.677-2.367-.077-.105-.635-.847-.635-1.616 0-.769.404-1.148.547-1.306.144-.158.314-.198.418-.198.106 0 .211.002.304.006.098.005.23-.037.36.275.134.321.458 1.116.498 1.198.04.081.067.176.013.282-.053.107-.08.175-.16.269-.08.093-.169.208-.241.279-.08.079-.164.165-.07.327.093.162.417.689.896 1.115.616.549 1.135.719 1.298.8.162.081.258.07.354-.041.096-.111.411-.479.521-.643.111-.164.22-.137.37-.082.15.054.957.451 1.121.533.164.082.274.122.314.19.04.068.04.394-.104.799z"/>
+          </svg>
+          <div style="display:flex; flex-direction:column; gap:1px;">
+            <span>WhatsApp Senior Stylist</span>
+            <span style="font-size:10px; color:#128C7E; font-weight:500;">Online Now &bull; Instant Loom Broadcast</span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Trust Stamp Inside Drawer -->
+      <div class="drawer-trust-footer">
+        <div class="drawer-trust-text">Silk Mark Certified &bull; Pure Silver Zari</div>
+        <div class="drawer-trust-sub">Insured Express Shipping to 34+ Countries</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shopping Bag Drawer -->
+  <div class="drawer-container" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title">
+    <div class="drawer-header">
+      <h2 class="drawer-title" id="cart-drawer-title">Shopping Bag (2)</h2>
+      <button type="button" class="drawer-close-btn" style="font-size:22px; cursor:pointer;">&times;</button>
+    </div>
+    
+    <div class="drawer-body">
+      <div class="cart-item">
+        <img src="assets/hero_swatch_clean.png" alt="Rudraksha Mayil Silk" class="cart-item-thumb">
+        <div class="cart-item-details">
+          <div class="cart-item-title">The Rudraksha Mayil Kanchipuram</div>
+          <div class="cart-item-meta">Color: Crimson Temple Red &bull; Tested Zari</div>
+          <div class="cart-item-price" data-inr-price="48500">&#8377;48,500</div>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img src="assets/avatar.png" alt="Banarasi Tissue Saree" class="cart-item-thumb">
+        <div class="cart-item-details">
+          <div class="cart-item-title">Varanasi Vintage Kadwa Organza</div>
+          <div class="cart-item-meta">Color: Pale Champagne Gold &bull; Handwoven</div>
+          <div class="cart-item-price" data-inr-price="36000">&#8377;36,000</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <div style="display:flex; justify-content:space-between; margin-bottom:14px; font-weight:700;">
+        <span>Subtotal</span>
+        <span style="color:#63000D; font-size:17px;" data-inr-price="84500">&#8377;84,500</span>
+      </div>
+      <button type="button" class="btn-submit" style="width:100%; text-align:center;" onclick="showToast('Proceeding to Sovereign Secure Checkout')">PROCEED TO SECURE CHECKOUT &rarr;</button>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer -->
+  <div class="drawer-container" id="wishlist-drawer" role="dialog" aria-modal="true" aria-labelledby="wishlist-drawer-title">
+    <div class="drawer-header">
+      <h2 class="drawer-title" id="wishlist-drawer-title">Saved Heirlooms (3)</h2>
+      <button type="button" class="drawer-close-btn" style="font-size:22px; cursor:pointer;">&times;</button>
+    </div>
+    
+    <div class="drawer-body">
+      <div class="cart-item">
+        <img src="assets/hero_swatch_clean.png" alt="Shikargah Banarasi" class="cart-item-thumb">
+        <div class="cart-item-details">
+          <div class="cart-item-title">Royal Emerald Shikargah Brocade</div>
+          <div class="cart-item-meta">Varanasi Loom &bull; Pure Silver Zari</div>
+          <div class="cart-item-price" data-inr-price="52000">&#8377;52,000</div>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img src="assets/avatar.png" alt="Mulberry Tussar" class="cart-item-thumb">
+        <div class="cart-item-details">
+          <div class="cart-item-title">Featherlight Mulberry Tussar Draping</div>
+          <div class="cart-item-meta">Everyday Grace &bull; Breathable Weave</div>
+          <div class="cart-item-price" data-inr-price="14500">&#8377;14,500</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <button type="button" class="btn-submit" style="width:100%; text-align:center;" onclick="showToast('All Wishlist items moved to your Bag')">MOVE ALL TO BAG</button>
+    </div>
+  </div>
+
+  <!-- WhatsApp Live Stylist Drawer -->
+  <div class="drawer-container" id="whatsapp-drawer" role="dialog" aria-modal="true" aria-labelledby="wa-drawer-title">
+    <div class="drawer-header" style="background:#075E54; color:#FFFFFF;">
+      <div>
+        <h2 class="drawer-title" id="wa-drawer-title" style="color:#FFFFFF; font-size:17px;">Fashion Village Concierge</h2>
+        <div style="font-size:12px; color:#A7E8D7;">&bull; Senior Stylist Ananya (Online Now)</div>
+      </div>
+      <button type="button" class="drawer-close-btn" style="font-size:22px; color:#FFFFFF; cursor:pointer;">&times;</button>
+    </div>
+
+    <div class="drawer-body" id="whatsapp-messages" style="background:#ECE5DD; display:flex; flex-direction:column;">
+      <div style="background:#FFFFFF; padding:12px 14px; border-radius:10px; max-width:85%; font-size:13px; margin-bottom:12px; border:1px solid #E6E1DC;">
+        <strong>Stylist Ananya:</strong> Namaste! Welcome to Fashion Village Silks. How may I assist your trousseau selection today? We can arrange a live high-definition loom video broadcast right away!
+      </div>
+    </div>
+
+    <div style="padding:16px; background:#F0F0F0; border-top:1px solid #DDD; display:flex; gap:8px;">
+      <input type="text" id="whatsapp-input" placeholder="Type your query..." style="flex:1; background:#FFF; border:1px solid #CCC; border-radius:20px; padding:10px 16px; font-size:13.5px;">
+      <button type="button" id="whatsapp-send-btn" style="background:#128C7E; color:#FFF; border-radius:50%; width:40px; height:40px; display:flex; align-items:center; justify-content:center; cursor:pointer;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
