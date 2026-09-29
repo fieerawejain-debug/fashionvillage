@@ -169,7 +169,7 @@
        2. Section 1: Editorial Hero Section (assets/hero_trimmed.png)
        ========================================================================= -->
   <section class="section-bleed bleed-hero" id="hero" aria-labelledby="hero-title">
-    <div class="section-frame">
+    <div class="section-frame desktop-only">
       <img src="assets/hero_trimmed.png" alt="Heritage Woven in Silk &amp; Gold - 2025 Sovereign Edit">
 
       <!-- Badge Hotspot -->
@@ -211,13 +211,71 @@
       </div>
 
     </div>
-</section>
+
+    <!-- Mobile Dedicated Luxury Hero -->
+    <div class="mobile-only mobile-hero-wrapper">
+      <div class="mobile-hero-img-box">
+        <img src="assets/full_hero_right.png" alt="Heritage Royal Silk Saree - 2025 Sovereign Edit">
+        <div class="mobile-hero-gradient-overlay"></div>
+        <div class="mobile-hero-badge-pill">2025 SOVEREIGN EDIT</div>
+      </div>
+      
+      <div class="mobile-hero-body">
+        <span class="mobile-sub-tag">CONSECRATED MULBERRY &bull; TESTED ZARI</span>
+        <h1 class="mobile-hero-title">Heritage Woven in Silk &amp; Gold</h1>
+        <p class="mobile-hero-desc">
+          Immerse yourself in authentic royal drapes spun from certified pure filaments and 100% lab-tested silver-gilt metallic zari.
+        </p>
+
+        <div class="mobile-hero-cta-grid">
+          <a href="#categories" class="mobile-btn-primary">EXPLORE ROYAL SILKS &rarr;</a>
+          <a href="concierge.html" class="mobile-btn-secondary">VIDEO CONCIERGE</a>
+        </div>
+
+        <!-- Stat Badges Row -->
+        <div class="mobile-stats-row">
+          <div class="mobile-stat-card">
+            <div class="mobile-stat-num">10,000+</div>
+            <div class="mobile-stat-lbl">Handloom Drapes</div>
+          </div>
+          <div class="mobile-stat-card">
+            <div class="mobile-stat-num">0.8%</div>
+            <div class="mobile-stat-lbl">Tested Silver Zari</div>
+          </div>
+          <div class="mobile-stat-card">
+            <div class="mobile-stat-num">45 Yrs</div>
+            <div class="mobile-stat-lbl">Master Loom Guild</div>
+          </div>
+        </div>
+
+        <!-- Featured Bridal Saree Quick Card -->
+        <div class="mobile-featured-card" onclick="openProductQuickView('The Rudraksha Mayil Kanchipuram', 48500, 'Hand-spun on a traditional triple-shuttle Korvai pit-loom. Sacred Rudraksha motifs and twin Mayil medallions along the authentic Ganga-Jamuni border.')">
+          <div class="mobile-featured-thumb">
+            <img src="assets/hero_swatch_clean.png" alt="The Rudraksha Mayil Swatch">
+          </div>
+          <div class="mobile-featured-info">
+            <span class="mobile-featured-tag">FEATURED BRIDAL HEIRLOOM</span>
+            <div class="mobile-featured-name">The Rudraksha Mayil Kanchipuram</div>
+            <div class="mobile-featured-price-row">
+              <span class="mobile-price" data-inr-price="48500">&#8377;48,500</span>
+              <span class="mobile-strike" data-inr-price="58000">&#8377;58,000</span>
+              <span class="mobile-pill">Handloom Mark</span>
+            </div>
+          </div>
+          <svg class="mobile-card-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- =========================================================================
        3. Interactive Concierge Banner (Section - Interactive Concierge Banner.png)
        ========================================================================= -->
   <section class="section-bleed bleed-concierge" id="concierge" aria-labelledby="concierge-title">
-    <div class="section-frame">
+    <div class="section-frame desktop-only">
       <img src="images/Section - Interactive Concierge Banner.png" alt="Bridal Trousseau &amp; Saree Styling Concierge">
 
       <!-- Left Concierge Info Hotspot -->
@@ -234,13 +292,43 @@
       </button>
 
     </div>
-</section>
+
+    <!-- Mobile Concierge Card -->
+    <div class="mobile-only mobile-concierge-wrapper">
+      <div class="mobile-concierge-card">
+        <span class="mobile-concierge-eyebrow">PRIVATE TROUSSEAU CONCIERGE</span>
+        <h2 class="mobile-concierge-title">Private 4K Video Styling Suite</h2>
+        <p class="mobile-concierge-desc">
+          Connect directly with our master loom curators in Kanchipuram and Varanasi. Private live 4K draping consultations arranged exclusively for your wedding and trousseau.
+        </p>
+
+        <div class="mobile-concierge-actions">
+          <button type="button" class="mobile-btn-gold trigger-appointment">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>BOOK VIDEO APPOINTMENT</span>
+          </button>
+
+          <button type="button" class="mobile-btn-wa trigger-whatsapp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.008-.466-1.579-.654-2.597-2.261-2.677-2.367-.077-.105-.635-.847-.635-1.616 0-.769.404-1.148.547-1.306.144-.158.314-.198.418-.198.106 0 .211.002.304.006.098.005.23-.037.36.275.134.321.458 1.116.498 1.198.04.081.067.176.013.282-.053.107-.08.175-.16.269-.08.093-.169.208-.241.279-.08.079-.164.165-.07.327.093.162.417.689.896 1.115.616.549 1.135.719 1.298.8.162.081.258.07.354-.041.096-.111.411-.479.521-.643.111-.164.22-.137.37-.082.15.054.957.451 1.121.533.164.082.274.122.314.19.04.068.04.394-.104.799z"/>
+            </svg>
+            <span>WHATSAPP SENIOR STYLIST</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- =========================================================================
        4. Section 3: Category Showcase Grid (Section - 3. Category Showcase Grid.png)
        ========================================================================= -->
   <section class="section-bleed bleed-categories" id="categories" aria-labelledby="cat-heading">
-    <div class="section-frame">
+    <div class="section-frame desktop-only">
       <img src="images/Section - 3. Category Showcase Grid.png" alt="Pillars of Indian Drapes - Signature Curations Category Showcase">
 
       <!-- Card 1: Pure Kanjivaram & Temple Silks -->
@@ -264,13 +352,68 @@
       </a>
 
     </div>
-</section>
+
+    <!-- Mobile Category Grid -->
+    <div class="mobile-only mobile-section-padding">
+      <div class="mobile-section-header">
+        <span class="mobile-sec-eyebrow">SIGNATURE CURATIONS</span>
+        <h2 class="mobile-sec-title">Pillars of Indian Drapes</h2>
+        <div class="mobile-sec-divider"></div>
+      </div>
+
+      <div class="mobile-categories-grid">
+        <a href="kanjivaram.html" class="mobile-cat-card">
+          <div class="mobile-cat-img-box">
+            <img src="assets/mobile/cat_kanjivaram.png" alt="Pure Kanjivaram &amp; Temple Silks">
+            <span class="mobile-cat-pill">420+ WEAVES</span>
+          </div>
+          <div class="mobile-cat-info">
+            <h3 class="mobile-cat-name">Pure Kanjivaram &amp; Temple Silks</h3>
+            <span class="mobile-cat-link">Explore Edit &rarr;</span>
+          </div>
+        </a>
+
+        <a href="banarasi.html" class="mobile-cat-card">
+          <div class="mobile-cat-img-box">
+            <img src="assets/mobile/cat_banarasi.png" alt="Banarasi Zari Elegance">
+            <span class="mobile-cat-pill">310+ WEAVES</span>
+          </div>
+          <div class="mobile-cat-info">
+            <h3 class="mobile-cat-name">Banarasi Zari Elegance</h3>
+            <span class="mobile-cat-link">Explore Edit &rarr;</span>
+          </div>
+        </a>
+
+        <a href="everyday.html" class="mobile-cat-card">
+          <div class="mobile-cat-img-box">
+            <img src="assets/mobile/cat_everyday.png" alt="Everyday &amp; Office Wear">
+            <span class="mobile-cat-pill">580+ WEAVES</span>
+          </div>
+          <div class="mobile-cat-info">
+            <h3 class="mobile-cat-name">Everyday &amp; Office Wear</h3>
+            <span class="mobile-cat-link">Explore Edit &rarr;</span>
+          </div>
+        </a>
+
+        <a href="kanjivaram.html" class="mobile-cat-card">
+          <div class="mobile-cat-img-box">
+            <img src="assets/mobile/cat_festive.png" alt="Festive &amp; Celebration Drapes">
+            <span class="mobile-cat-pill">260+ WEAVES</span>
+          </div>
+          <div class="mobile-cat-info">
+            <h3 class="mobile-cat-name">Festive &amp; Celebration Drapes</h3>
+            <span class="mobile-cat-link">Explore Edit &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- =========================================================================
        5. Section 4: Curated Bestsellers Section (4. Curated Bestsellers Section@2x.png)
        ========================================================================= -->
   <section class="section-bleed bleed-bestsellers" id="bestsellers" aria-labelledby="bestsellers-heading">
-    <div class="section-frame">
+    <div class="section-frame desktop-only">
       <img src="images/4. Curated Bestsellers Section@2x.png" alt="Curated Bestsellers - Handloom Masterpieces in High Demand">
 
       <!-- Bestseller Product 1 Hotspot -->
@@ -294,13 +437,92 @@
       </div>
 
     </div>
+  
+    <!-- Mobile Bestsellers Section -->
+    <div class="mobile-only mobile-section-padding">
+      <div class="mobile-section-header">
+        <span class="mobile-sec-eyebrow">HANDLOOM MASTERPIECES IN HIGH DEMAND</span>
+        <h2 class="mobile-sec-title">Curated Bestsellers</h2>
+        <div class="mobile-sec-divider"></div>
+      </div>
+
+      <div class="mobile-products-grid">
+        <div class="mobile-prod-card" onclick="openProductQuickView('Kanjivaram Vaira Oosi Brocade', 42000, 'Tested Zari • Royal Emerald &amp; Crimson')">
+          <div class="mobile-prod-img-box">
+            <img src="assets/mobile/best_1.png" alt="Kanjivaram Vaira Oosi Brocade">
+            <span class="mobile-prod-badge">TESTED ZARI</span>
+          </div>
+          <div class="mobile-prod-body">
+            <span class="mobile-prod-cat">BRIDAL KANJIVARAM</span>
+            <h3 class="mobile-prod-title">Kanjivaram Vaira Oosi Brocade</h3>
+            <div class="mobile-prod-meta">Royal Emerald &bull; Tested Zari</div>
+            <div class="mobile-prod-price-box">
+              <span class="mobile-prod-price" data-inr-price="42000">&#8377;42,000</span>
+              <span class="mobile-prod-strike" data-inr-price="49000">&#8377;49,000</span>
+            </div>
+            <button type="button" class="mobile-prod-cta">Quick View &rarr;</button>
+          </div>
+        </div>
+
+        <div class="mobile-prod-card" onclick="openProductQuickView('Banarasi Katan Shikargah', 58500, 'Pure Silver Weft • Consecrated Mulberry Silk')">
+          <div class="mobile-prod-img-box">
+            <img src="assets/mobile/best_2.png" alt="Banarasi Katan Shikargah">
+            <span class="mobile-prod-badge">PURE SILVER WEFT</span>
+          </div>
+          <div class="mobile-prod-body">
+            <span class="mobile-prod-cat">BANARASI LOOMS</span>
+            <h3 class="mobile-prod-title">Banarasi Katan Shikargah</h3>
+            <div class="mobile-prod-meta">Consecrated Mulberry Silk</div>
+            <div class="mobile-prod-price-box">
+              <span class="mobile-prod-price" data-inr-price="58500">&#8377;58,500</span>
+              <span class="mobile-prod-strike" data-inr-price="68000">&#8377;68,000</span>
+            </div>
+            <button type="button" class="mobile-prod-cta">Quick View &rarr;</button>
+          </div>
+        </div>
+
+        <div class="mobile-prod-card" onclick="openProductQuickView('Tissue Organza Bridal Draping', 34500, 'Featherlight Metallic Sheen • Champagne Gold')">
+          <div class="mobile-prod-img-box">
+            <img src="assets/mobile/best_3.png" alt="Tissue Organza Bridal Draping">
+            <span class="mobile-prod-badge">ORGANZA TISSUE</span>
+          </div>
+          <div class="mobile-prod-body">
+            <span class="mobile-prod-cat">FEATHERLIGHT LUXE</span>
+            <h3 class="mobile-prod-title">Tissue Organza Bridal Draping</h3>
+            <div class="mobile-prod-meta">Champagne Gold Metallic Sheen</div>
+            <div class="mobile-prod-price-box">
+              <span class="mobile-prod-price" data-inr-price="34500">&#8377;34,500</span>
+              <span class="mobile-prod-strike" data-inr-price="41000">&#8377;41,000</span>
+            </div>
+            <button type="button" class="mobile-prod-cta">Quick View &rarr;</button>
+          </div>
+        </div>
+
+        <div class="mobile-prod-card" onclick="openProductQuickView('Arundhati Korvai Muhurtham Silk', 64000, 'Triple Shuttle Pit Loom • Heritage Mayil Border')">
+          <div class="mobile-prod-img-box">
+            <img src="assets/mobile/best_4.png" alt="Arundhati Korvai Muhurtham Silk">
+            <span class="mobile-prod-badge">KORVAI PIT LOOM</span>
+          </div>
+          <div class="mobile-prod-body">
+            <span class="mobile-prod-cat">HEIRLOOM CONNOISSEUR</span>
+            <h3 class="mobile-prod-title">Arundhati Korvai Muhurtham Silk</h3>
+            <div class="mobile-prod-meta">Triple Shuttle Heritage Mayil Border</div>
+            <div class="mobile-prod-price-box">
+              <span class="mobile-prod-price" data-inr-price="64000">&#8377;64,000</span>
+              <span class="mobile-prod-strike" data-inr-price="75000">&#8377;75,000</span>
+            </div>
+            <button type="button" class="mobile-prod-cta">Quick View &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- =========================================================================
        6. Section 5: 'Everyday Grace' Regular Wear Spotlight
        ========================================================================= -->
   <section class="section-bleed bleed-everyday" id="everyday-grace" aria-labelledby="everyday-heading">
-    <div class="section-frame">
+    <div class="section-frame desktop-only">
       <img src="images/Section - 5. 'Everyday Grace - Regular Wear Spotlight.png" alt="Everyday Grace - Regular Wear Handloom Spotlight">
 
       <a href="everyday.html" class="hotspot" style="left: 3.75%; top: 82%; width: 20%; height: 8%;" title="Shop Everyday Grace Wardrobe">
@@ -311,13 +533,40 @@
       <a href="everyday.html" class="hotspot hotspot-product" style="left: 52%; top: 22%; width: 44%; height: 55%;" title="Office Luxe Silk-Linen Co-ords"></a>
 
     </div>
+  
+    <!-- Mobile Everyday Grace Spotlight -->
+    <div class="mobile-only mobile-section-padding">
+      <div class="mobile-section-header">
+        <span class="mobile-sec-eyebrow">BREATHABLE EVERYDAY LUXE</span>
+        <h2 class="mobile-sec-title">Everyday Grace Spotlight</h2>
+        <div class="mobile-sec-divider"></div>
+        <p class="mobile-sec-desc">
+          Featherweight mulmul kurtas, breathable pure linen sarees, and relaxed handloom co-ord sets tailored for boardrooms and serene weekends.
+        </p>
+      </div>
+
+      <div class="mobile-everyday-cards">
+        <div class="mobile-everyday-banner">
+          <img src="assets/mobile/everyday_1.png" alt="Mulmul Cotton &amp; Breathable Linen">
+          <div class="mobile-banner-caption">Mulmul Cotton &amp; Breathable Linen</div>
+        </div>
+        <div class="mobile-everyday-banner">
+          <img src="assets/mobile/everyday_2.png" alt="Office Luxe Silk-Linen Co-ords">
+          <div class="mobile-banner-caption">Office Luxe Silk-Linen Co-ords</div>
+        </div>
+      </div>
+
+      <a href="everyday.html" class="mobile-btn-primary" style="display:block; text-align:center; margin-top:20px;">
+        SHOP EVERYDAY GRACE EDIT &rarr;
+      </a>
+    </div>
   </section>
 
   <!-- =========================================================================
        7. Section 6: The Craftsmanship &amp; Weaver Story
        ========================================================================= -->
   <section class="section-bleed bleed-craft" id="craftsmanship" aria-labelledby="craft-heading">
-    <div class="section-frame">
+    <div class="section-frame desktop-only">
       <img src="images/Section - 6. The Craftsmanship & Weaver Story.png" alt="The Craftsmanship &amp; Weaver Story - Preserving Generational Heritage">
 
       <button type="button" class="hotspot" style="left: 3.75%; top: 76%; width: 22%; height: 9%;" onclick="openVideoLoomModal()" title="Watch the Master Weaver Guild Documentary">
@@ -329,16 +578,93 @@
       </a>
 
     </div>
+  
+    <!-- Mobile Craftsmanship Story -->
+    <div class="mobile-only mobile-section-padding">
+      <div class="mobile-craft-card">
+        <div class="mobile-craft-img">
+          <img src="assets/mobile/weaver.png" alt="Master Artisan on Handloom Pit Loom">
+        </div>
+        <div class="mobile-craft-body">
+          <span class="mobile-sec-eyebrow" style="color:var(--color-gold-deep);">THE WEAVER STORY</span>
+          <h2 class="mobile-sec-title">Preserving Generational Heritage</h2>
+          <p class="mobile-sec-desc">
+            Every drape at Fashion Village is handwoven by master artisan families across 45 years of generational guild mastery, safeguarding authentic South Asian loom traditions.
+          </p>
+
+          <div class="mobile-craft-btns">
+            <button type="button" class="mobile-btn-primary" onclick="openVideoLoomModal()" style="width:100%; text-align:center;">
+              WATCH MASTER LOOM FILM (4 MIN)
+            </button>
+            <a href="story.html" class="mobile-btn-secondary" style="display:block; text-align:center; width:100%;">
+              READ WEAVER GUILD ARCHIVES &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- =========================================================================
        8. Section 7: Customer Testimonials &amp; Press Quotes
        ========================================================================= -->
   <section class="section-bleed bleed-testimonials" id="testimonials" aria-labelledby="testimonials-heading">
-    <div class="section-frame">
+    <div class="section-frame desktop-only">
       <img src="images/Section - 7. Customer Testimonials & Press Quotes.png" alt="Customer Testimonials &amp; Vogue, Elle, Architectural Digest Press Quotes">
 
       <div class="hotspot" style="left: 3.75%; top: 30%; width: 92.5%; height: 55%;" onclick="showToast('Verified Brides &amp; Heirloom Collectors across 34 countries.')" title="Customer Reviews"></div>
+    </div>
+  
+    <!-- Mobile Testimonials & Press Quotes -->
+    <div class="mobile-only mobile-section-padding">
+      <div class="mobile-section-header">
+        <span class="mobile-sec-eyebrow">CLIENT VERIFIED &bull; PRESS RECOGNITION</span>
+        <h2 class="mobile-sec-title">Cherished Across the World</h2>
+        <div class="mobile-sec-divider"></div>
+      </div>
+
+      <!-- Featured Press Review Box -->
+      <div class="mobile-press-quote-box">
+        <div class="mobile-quote-mark">&ldquo;</div>
+        <p class="mobile-quote-text">
+          Fashion Village sets the gold benchmark for tested zari transparency and authentic pit loom weaves.
+        </p>
+        <div class="mobile-quote-author">— Architectural Digest Luxury Review</div>
+      </div>
+
+      <!-- 2 Verified Bride Reviews -->
+      <div class="mobile-reviews-stack">
+        <div class="mobile-review-card">
+          <div class="mobile-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="mobile-review-p">
+            &ldquo;Ordering my bridal Kanchipuram from London felt daunting until their video concierge consultation. The crimson Mayil exceeded every expectation.&rdquo;
+          </p>
+          <div class="mobile-reviewer-info">
+            <strong>Dr. Radhika Mehra</strong> &bull; London (UK)
+          </div>
+        </div>
+
+        <div class="mobile-review-card">
+          <div class="mobile-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="mobile-review-p">
+            &ldquo;The Banarasi Katan Shikargah is a masterpiece. Heirloom quality that will be passed down through generations.&rdquo;
+          </p>
+          <div class="mobile-reviewer-info">
+            <strong>Meenakshi Krishnan</strong> &bull; Bengaluru
+          </div>
+        </div>
+      </div>
+
+      <!-- Press Strip -->
+      <div class="mobile-press-strip">
+        <span>VOGUE INDIA</span>
+        <span>&bull;</span>
+        <span>HARPER'S BAZAAR</span>
+        <span>&bull;</span>
+        <span>THE BESPOKE LUXE</span>
+        <span>&bull;</span>
+        <span>ELLE COUTURE</span>
+      </div>
     </div>
   </section>
 
@@ -346,7 +672,7 @@
        9. Section 8: Instagram Luxury Lookbook Feed Gallery
        ========================================================================= -->
   <section class="section-bleed bleed-instagram" id="lookbook" aria-labelledby="instagram-heading">
-    <div class="section-frame">
+    <div class="section-frame desktop-only">
       <img src="images/Section - 8. Instagram Luxury Lookbook Feed Gallery.png" alt="Instagram Luxury Lookbook Feed Gallery @FashionVillageSilks">
 
       <div class="hotspot" style="left: 3.75%; top: 22%; width: 17%; height: 70%;" onclick="showToast('Tagged: #FashionVillageBride wearing The Rudraksha Mayil')"></div>
@@ -355,6 +681,37 @@
       <div class="hotspot" style="left: 60%; top: 22%; width: 17%; height: 70%;" onclick="showToast('Tagged: Everyday Grace Mulmul Linen Series')"></div>
       <div class="hotspot" style="left: 78.75%; top: 22%; width: 17%; height: 70%;" onclick="showToast('Follow @FashionVillageSilks on Instagram')"></div>
 
+    </div>
+  
+    <!-- Mobile Lookbook Gallery -->
+    <div class="mobile-only mobile-section-padding">
+      <div class="mobile-section-header">
+        <span class="mobile-sec-eyebrow">@FASHIONVILLAGESILKS ON INSTAGRAM</span>
+        <h2 class="mobile-sec-title">Styled by You: The Sovereign Gallery</h2>
+        <div class="mobile-sec-divider"></div>
+      </div>
+
+      <div class="mobile-gallery-grid">
+        <div class="mobile-gallery-item" onclick="showToast('Tagged: #FashionVillageBride wearing The Rudraksha Mayil')">
+          <img src="assets/mobile/insta_1.png" alt="Fashion Village Bride">
+        </div>
+        <div class="mobile-gallery-item" onclick="showToast('Tagged: Reception drapes in Varanasi Gold Organza')">
+          <img src="assets/mobile/insta_2.png" alt="Varanasi Gold Organza">
+        </div>
+        <div class="mobile-gallery-item" onclick="showToast('Tagged: Connoisseur Tested Zari Heirloom Pallu')">
+          <img src="assets/mobile/insta_3.png" alt="Tested Zari Heirloom Pallu">
+        </div>
+        <div class="mobile-gallery-item" onclick="showToast('Tagged: Everyday Grace Mulmul Linen Series')">
+          <img src="assets/mobile/insta_4.png" alt="Mulmul Linen Series">
+        </div>
+        <div class="mobile-gallery-item" onclick="showToast('Follow @FashionVillageSilks on Instagram')">
+          <img src="assets/mobile/insta_5.png" alt="Fashion Village Lookbook">
+        </div>
+      </div>
+
+      <button type="button" class="mobile-btn-primary" onclick="showToast('Follow @FashionVillageSilks on Instagram')" style="display:block; width:100%; text-align:center; margin-top:16px;">
+        FOLLOW ON INSTAGRAM &rarr;
+      </button>
     </div>
   </section>
 
