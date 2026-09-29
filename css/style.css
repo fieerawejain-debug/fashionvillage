@@ -135,20 +135,45 @@ img {
   gap: 20px;
 }
 
-/* Brand Logo (Unclipped & Crisp) */
+/* Brand Logo (Royal Handloom Crest & Grand Typography) */
 .brand-logo {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 13px;
   text-decoration: none !important;
   flex-shrink: 0;
 }
 
+.brand-crest {
+  width: 46px;
+  height: 46px;
+  background: linear-gradient(135deg, #63000D 0%, #460009 100%);
+  border: 1.5px solid var(--color-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(99, 0, 13, 0.22);
+  flex-shrink: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.brand-logo:hover .brand-crest {
+  transform: scale(1.06) rotate(4deg);
+  box-shadow: 0 4px 14px rgba(197, 154, 69, 0.35);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .brand-name {
   font-family: var(--font-serif);
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 27px;
+  font-weight: 800;
   color: var(--color-maroon);
-  letter-spacing: 0.6px;
+  letter-spacing: 0.8px;
   line-height: 1.05;
 }
 
@@ -1333,35 +1358,76 @@ img {
     padding: 6px 12px;
   }
 
-  .announcement-text {
-    font-size: 9.5px;
-    letter-spacing: 0.5px;
-    white-space: normal;
-    text-align: center;
-    line-height: 1.35;
+  /* Top Announcement Bar Mobile */
+  .top-announcement-bar {
+    height: 30px;
+    padding: 0 10px;
   }
 
-  .announcement-text .dot {
+  .announcement-text {
+    font-size: 9.5px;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .announcement-text .dot,
+  .announcement-text span:last-child {
     display: none;
   }
 
-  /* Sticky Header */
+  /* Sticky Header Mobile */
+  .site-header {
+    background-color: #FFFFFF;
+  }
+
   .header-container {
-    height: 58px;
+    height: 72px;
     padding: 0 12px;
     gap: 8px;
+    justify-content: space-between;
+  }
+
+  .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 0;
+    flex: 1;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .brand-crest {
+    width: 36px;
+    height: 36px;
+    border: 1.2px solid var(--color-gold);
+    flex-shrink: 0;
+  }
+
+  .brand-crest svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .brand-text {
+    display: flex;
+    flex-direction: column;
   }
 
   .brand-name {
-    font-size: 17px;
-    letter-spacing: 0.5px;
-    line-height: 1;
+    font-size: 19px;
+    letter-spacing: 0.6px;
+    line-height: 1.05;
+    white-space: nowrap;
   }
 
   .brand-sub {
-    font-size: 6.5px;
-    letter-spacing: 1px;
+    font-size: 7px;
+    letter-spacing: 1.4px;
     margin-top: 2px;
+    white-space: nowrap;
   }
 
   .search-container {
@@ -1372,31 +1438,42 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
+    color: var(--color-maroon);
     flex-shrink: 0;
   }
 
   #store-locator-btn,
   .header-v-divider,
   #currency-selector-btn,
-  .user-avatar-circle {
-    display: none;
+  .user-avatar-circle,
+  #wishlist-btn,
+  .header-nav-actions .nav-action-item {
+    display: none !important;
   }
 
   .mobile-search-toggle-btn {
     display: flex !important;
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
+  }
+
+  #cart-btn {
+    display: flex !important;
+    width: 36px;
+    height: 36px;
   }
 
   .icon-action-btn {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
   }
 
   .header-nav-actions {
-    gap: 6px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
     flex-shrink: 0;
   }
 
@@ -1874,67 +1951,28 @@ img {
   }
 
   .mobile-cat-card {
-    background: #FFFFFF;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-    border: 1px solid #ECE3D9;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none !important;
-  }
-
-  .mobile-cat-img-box {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1 / 1.15;
-    overflow: hidden;
     background: #52000A;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    border: 1px solid #E5DBD1;
+    display: block;
+    aspect-ratio: 1 / 1.34;
+    text-decoration: none !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-  .mobile-cat-img-box img {
+  .mobile-cat-card:hover,
+  .mobile-cat-card:active {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(99, 0, 13, 0.18);
+  }
+
+  .mobile-cat-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-
-  .mobile-cat-pill {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    background: rgba(30, 20, 20, 0.85);
-    color: var(--color-gold-light);
-    font-size: 8px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding: 3px 7px;
-    border-radius: 999px;
-  }
-
-  .mobile-cat-info {
-    padding: 10px 10px 12px;
-    text-align: center;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .mobile-cat-name {
-    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--color-maroon);
-    line-height: 1.25;
-    margin-bottom: 6px;
-  }
-
-  .mobile-cat-link {
-    font-size: 10px;
-    font-weight: 700;
-    color: var(--color-gold-deep);
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
+    display: block;
   }
 
   /* Bestsellers 2-Column Grid */
@@ -1946,21 +1984,27 @@ img {
 
   .mobile-prod-card {
     background: #FFFFFF;
-    border-radius: 6px;
+    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 14px rgba(0,0,0,0.06);
     border: 1px solid #EBE2D8;
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .mobile-prod-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   }
 
   .mobile-prod-img-box {
     position: relative;
     width: 100%;
-    aspect-ratio: 1 / 1.45;
+    aspect-ratio: 1 / 1.3;
     overflow: hidden;
-    background: #50000A;
+    background: #FAF8F5;
   }
 
   .mobile-prod-img-box img {
