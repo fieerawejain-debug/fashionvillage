@@ -64,25 +64,8 @@
       </button>
 
       <a href="index.html" class="brand-logo" aria-label="Fashion Village Home">
-        <div class="brand-crest">
-          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <g transform="rotate(-45 16 16)">
-              <path d="M4 16 C9 12, 23 12, 28 16 C23 20, 9 20, 4 16 Z" fill="#E8B86D" stroke="#FFFFFF" stroke-width="0.8"/>
-              <path d="M7 16 C11 13.5, 21 13.5, 25 16 C21 18.5, 11 18.5, 7 16 Z" fill="#63000D"/>
-              <rect x="12" y="14.5" width="8" height="3" rx="1.5" fill="#F4D58E"/>
-              <line x1="16" y1="12" x2="16" y2="8" stroke="#F4D58E" stroke-width="1"/>
-              <line x1="16" y1="20" x2="16" y2="24" stroke="#F4D58E" stroke-width="1"/>
-            </g>
-            <circle cx="16" cy="4" r="1.4" fill="#F4D58E"/>
-            <circle cx="16" cy="28" r="1.4" fill="#F4D58E"/>
-            <circle cx="4" cy="16" r="1.4" fill="#F4D58E"/>
-            <circle cx="28" cy="16" r="1.4" fill="#F4D58E"/>
-          </svg>
-        </div>
-        <div class="brand-text">
-          <span class="brand-name">FASHION VILLAGE</span>
-          <span class="brand-sub">ROYAL HANDLOOM SILKS &bull; ESTD 1980</span>
-        </div>
+        <span class="brand-name">FASHION VILLAGE</span>
+        <span class="brand-sub">ROYAL HANDLOOM SILKS &bull; ESTD 1980</span>
       </a>
 
       <div class="search-container">
@@ -131,14 +114,87 @@
 
     <!-- Mobile Everyday Grace Spotlight -->
     <div class="mobile-only mobile-section-padding">
-      <div class="mobile-everyday-cards">
-        <div class="mobile-everyday-banner">
-          <img src="assets/mobile/everyday_1.png" alt="Mulmul Cotton &amp; Breathable Linen">
-          <div class="mobile-banner-caption">Mulmul Cotton &amp; Breathable Linen</div>
+      <div class="mobile-section-header">
+        <span class="mobile-sec-eyebrow">BREATHABLE EVERYDAY LUXE</span>
+        <h2 class="mobile-sec-title">Everyday Grace Spotlight</h2>
+        <div class="mobile-sec-divider"></div>
+        <p class="mobile-sec-desc">
+          Featherweight mulmul kurtas, breathable pure linen sarees, and relaxed handloom co-ord sets tailored for boardrooms and serene weekends.
+        </p>
+      </div>
+
+      <!-- Editorial Narrative Card -->
+      <div class="mobile-everyday-editorial-card">
+        <span class="mobile-ed-badge">EVERYDAY GRACE ATELIER</span>
+        <h3 class="mobile-ed-title">Uncompromising Comfort for <em>Everyday Elegance</em></h3>
+        <p class="mobile-ed-p">
+          Crafted for workdays, afternoon brunches, and relaxed family gatherings. Our regular wear line marries high-twist breathable cottons, featherlight Chanderi drapes, and easy-to-care natural silks with relaxed contemporary cuts.
+        </p>
+        
+        <div class="mobile-ed-features">
+          <div class="mobile-ed-feature-item">
+            <svg class="mobile-ed-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <div>
+              <strong>Pure Breathable Fibers</strong>
+              <span>Zero synthetic blends. 100% natural mulmul, pure linen, and airy tussar.</span>
+            </div>
+          </div>
+          <div class="mobile-ed-feature-item">
+            <svg class="mobile-ed-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <div>
+              <strong>Easy-Iron &amp; Gentle Handwash</strong>
+              <span>Designed for modern daily wear without the burden of constant specialized care.</span>
+            </div>
+          </div>
+          <div class="mobile-ed-feature-item">
+            <svg class="mobile-ed-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <div>
+              <strong>Thoughtful Functional Details</strong>
+              <span>Deep functional pockets, side vents, and elasticated ease.</span>
+            </div>
+          </div>
         </div>
-        <div class="mobile-everyday-banner">
-          <img src="assets/mobile/everyday_2.png" alt="Office Luxe Silk-Linen Co-ords">
-          <div class="mobile-banner-caption">Office Luxe Silk-Linen Co-ords</div>
+      </div>
+
+      <!-- 3 Real Everyday Products Track -->
+      <div class="mobile-everyday-prods-grid">
+        <div class="mobile-everyday-prod-card" onclick="openProductQuickView('Vasant Cotton-Silk Tunic', 2899, 'Daily Kurta Set • Pure Mulmul with Silk-Cotton Blend')">
+          <div class="mobile-ed-thumb">
+            <img src="assets/mobile/everyday_p1.png" alt="Vasant Cotton-Silk Tunic">
+          </div>
+          <div class="mobile-ed-info">
+            <span class="mobile-ed-cat">DAILY KURTA SET</span>
+            <div class="mobile-ed-name">Vasant Cotton-Silk Tunic</div>
+            <div class="mobile-ed-price">&#8377;2,899</div>
+          </div>
+        </div>
+
+        <div class="mobile-everyday-prod-card" onclick="openProductQuickView('Indigo Handloom Saree', 3450, 'Office Linen Drape • Breathable Pure Handloom Linen')">
+          <div class="mobile-ed-thumb">
+            <img src="assets/mobile/everyday_p2.png" alt="Indigo Handloom Saree">
+          </div>
+          <div class="mobile-ed-info">
+            <span class="mobile-ed-cat">OFFICE LINEN DRAPE</span>
+            <div class="mobile-ed-name">Indigo Handloom Saree</div>
+            <div class="mobile-ed-price">&#8377;3,450</div>
+          </div>
+        </div>
+
+        <div class="mobile-everyday-prod-card" onclick="openProductQuickView('Mulmul Printed Set', 2499, 'Comfort Co-ord • Featherlight Cotton-Silk Daily Wear')">
+          <div class="mobile-ed-thumb">
+            <img src="assets/mobile/everyday_p3.png" alt="Mulmul Printed Set">
+          </div>
+          <div class="mobile-ed-info">
+            <span class="mobile-ed-cat">COMFORT CO-ORD</span>
+            <div class="mobile-ed-name">Mulmul Printed Set</div>
+            <div class="mobile-ed-price">&#8377;2,499</div>
+          </div>
         </div>
       </div>
     </div>

@@ -41,27 +41,10 @@
         </svg>
       </button>
 
-      <!-- Brand Logo (Royal Handloom Crest & Grand Typography) -->
+      <!-- Brand Logo (Pure Refined Typography) -->
       <a href="index.html" class="brand-logo" aria-label="Fashion Village Home">
-        <div class="brand-crest">
-          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <g transform="rotate(-45 16 16)">
-              <path d="M4 16 C9 12, 23 12, 28 16 C23 20, 9 20, 4 16 Z" fill="#E8B86D" stroke="#FFFFFF" stroke-width="0.8"/>
-              <path d="M7 16 C11 13.5, 21 13.5, 25 16 C21 18.5, 11 18.5, 7 16 Z" fill="#63000D"/>
-              <rect x="12" y="14.5" width="8" height="3" rx="1.5" fill="#F4D58E"/>
-              <line x1="16" y1="12" x2="16" y2="8" stroke="#F4D58E" stroke-width="1"/>
-              <line x1="16" y1="20" x2="16" y2="24" stroke="#F4D58E" stroke-width="1"/>
-            </g>
-            <circle cx="16" cy="4" r="1.4" fill="#F4D58E"/>
-            <circle cx="16" cy="28" r="1.4" fill="#F4D58E"/>
-            <circle cx="4" cy="16" r="1.4" fill="#F4D58E"/>
-            <circle cx="28" cy="16" r="1.4" fill="#F4D58E"/>
-          </svg>
-        </div>
-        <div class="brand-text">
-          <span class="brand-name">FASHION VILLAGE</span>
-          <span class="brand-sub">ROYAL HANDLOOM SILKS &bull; ESTD 1980</span>
-        </div>
+        <span class="brand-name">FASHION VILLAGE</span>
+        <span class="brand-sub">ROYAL HANDLOOM SILKS &bull; ESTD 1980</span>
       </a>
 
       <!-- Real Live Interactive Search Box -->
@@ -534,19 +517,83 @@
         </p>
       </div>
 
-      <div class="mobile-everyday-cards">
-        <div class="mobile-everyday-banner">
-          <img src="assets/mobile/everyday_1.png" alt="Mulmul Cotton &amp; Breathable Linen">
-          <div class="mobile-banner-caption">Mulmul Cotton &amp; Breathable Linen</div>
+      <!-- Editorial Narrative Card (Pure HTML - No image of text!) -->
+      <div class="mobile-everyday-editorial-card">
+        <span class="mobile-ed-badge">EVERYDAY GRACE ATELIER</span>
+        <h3 class="mobile-ed-title">Uncompromising Comfort for <em>Everyday Elegance</em></h3>
+        <p class="mobile-ed-p">
+          Crafted for workdays, afternoon brunches, and relaxed family gatherings. Our regular wear line marries high-twist breathable cottons, featherlight Chanderi drapes, and easy-to-care natural silks with relaxed contemporary cuts.
+        </p>
+        
+        <div class="mobile-ed-features">
+          <div class="mobile-ed-feature-item">
+            <svg class="mobile-ed-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <div>
+              <strong>Pure Breathable Fibers</strong>
+              <span>Zero synthetic blends. 100% natural mulmul, pure linen, and airy tussar.</span>
+            </div>
+          </div>
+          <div class="mobile-ed-feature-item">
+            <svg class="mobile-ed-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <div>
+              <strong>Easy-Iron &amp; Gentle Handwash</strong>
+              <span>Designed for modern daily wear without the burden of constant specialized care.</span>
+            </div>
+          </div>
+          <div class="mobile-ed-feature-item">
+            <svg class="mobile-ed-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <div>
+              <strong>Thoughtful Functional Details</strong>
+              <span>Deep functional pockets, side vents, and elasticated ease.</span>
+            </div>
+          </div>
         </div>
-        <div class="mobile-everyday-banner">
-          <img src="assets/mobile/everyday_2.png" alt="Office Luxe Silk-Linen Co-ords">
-          <div class="mobile-banner-caption">Office Luxe Silk-Linen Co-ords</div>
+      </div>
+
+      <!-- 3 Real Everyday Products Grid -->
+      <div class="mobile-everyday-prods-grid">
+        <div class="mobile-everyday-prod-card" onclick="openProductQuickView('Vasant Cotton-Silk Tunic', 2899, 'Daily Kurta Set • Pure Mulmul with Silk-Cotton Blend')">
+          <div class="mobile-ed-thumb">
+            <img src="assets/mobile/everyday_p1.png" alt="Vasant Cotton-Silk Tunic">
+          </div>
+          <div class="mobile-ed-info">
+            <span class="mobile-ed-cat">DAILY KURTA SET</span>
+            <div class="mobile-ed-name">Vasant Cotton-Silk Tunic</div>
+            <div class="mobile-ed-price">&#8377;2,899</div>
+          </div>
+        </div>
+
+        <div class="mobile-everyday-prod-card" onclick="openProductQuickView('Indigo Handloom Saree', 3450, 'Office Linen Drape • Breathable Pure Handloom Linen')">
+          <div class="mobile-ed-thumb">
+            <img src="assets/mobile/everyday_p2.png" alt="Indigo Handloom Saree">
+          </div>
+          <div class="mobile-ed-info">
+            <span class="mobile-ed-cat">OFFICE LINEN DRAPE</span>
+            <div class="mobile-ed-name">Indigo Handloom Saree</div>
+            <div class="mobile-ed-price">&#8377;3,450</div>
+          </div>
+        </div>
+
+        <div class="mobile-everyday-prod-card" onclick="openProductQuickView('Mulmul Printed Set', 2499, 'Comfort Co-ord • Featherlight Cotton-Silk Daily Wear')">
+          <div class="mobile-ed-thumb">
+            <img src="assets/mobile/everyday_p3.png" alt="Mulmul Printed Set">
+          </div>
+          <div class="mobile-ed-info">
+            <span class="mobile-ed-cat">COMFORT CO-ORD</span>
+            <div class="mobile-ed-name">Mulmul Printed Set</div>
+            <div class="mobile-ed-price">&#8377;2,499</div>
+          </div>
         </div>
       </div>
 
       <a href="everyday.html" class="mobile-btn-primary" style="display:block; text-align:center; margin-top:20px;">
-        SHOP EVERYDAY GRACE EDIT &rarr;
+        SHOP DAILY WEAR FROM &#8377;1,899 &rarr;
       </a>
     </div>
   </section>
@@ -568,28 +615,76 @@
 
     </div>
   
-    <!-- Mobile Craftsmanship Story -->
+    <!-- Mobile Craftsmanship & Handloom Mastery Story -->
     <div class="mobile-only mobile-section-padding">
-      <div class="mobile-craft-card">
-        <div class="mobile-craft-img">
-          <img src="assets/mobile/weaver.png" alt="Master Artisan on Handloom Pit Loom">
-        </div>
-        <div class="mobile-craft-body">
-          <span class="mobile-sec-eyebrow" style="color:var(--color-gold-deep);">THE WEAVER STORY</span>
-          <h2 class="mobile-sec-title">Preserving Generational Heritage</h2>
-          <p class="mobile-sec-desc">
-            Every drape at Fashion Village is handwoven by master artisan families across 45 years of generational guild mastery, safeguarding authentic South Asian loom traditions.
-          </p>
+      <div class="mobile-section-header">
+        <span class="mobile-sec-eyebrow">ROOTED IN TRADITION</span>
+        <h2 class="mobile-sec-title">Generations of Loom Mastery</h2>
+        <div class="mobile-sec-divider"></div>
+        <p class="mobile-sec-desc">
+          Every yardage woven at Fashion Village tells the story of an artisan family that has passed down warp and weft calibration through five uninterrupted centuries.
+        </p>
+      </div>
 
-          <div class="mobile-craft-btns">
-            <button type="button" class="mobile-btn-primary" onclick="openVideoLoomModal()" style="width:100%; text-align:center;">
-              WATCH MASTER LOOM FILM (4 MIN)
-            </button>
-            <a href="story.html" class="mobile-btn-secondary" style="display:block; text-align:center; width:100%;">
-              READ WEAVER GUILD ARCHIVES &rarr;
-            </a>
+      <!-- Master Weaver Real Photo Card -->
+      <div class="mobile-weaver-hero-card">
+        <div class="mobile-weaver-img-wrap">
+          <img src="assets/mobile/weaver_clean.png" alt="Master Weaver Shri Karunakaran on Traditional Pit Loom">
+        </div>
+      </div>
+
+      <!-- 3 Generational Mastery Steps -->
+      <div class="mobile-loom-steps-stack">
+        <div class="mobile-loom-step-item">
+          <div class="mobile-step-num-badge">1</div>
+          <div class="mobile-step-body">
+            <h3 class="mobile-step-heading">Consecrated Mulberry Sericulture</h3>
+            <p class="mobile-step-text">
+              Sourced from highest-grade domestic silkworms in Karnataka. The unrefined filament possesses natural tensile strength, ensuring each saree endures for generations without fabric degradation.
+            </p>
           </div>
         </div>
+
+        <div class="mobile-loom-step-item">
+          <div class="mobile-step-num-badge">2</div>
+          <div class="mobile-step-body">
+            <h3 class="mobile-step-heading">Silver-Core Tested Zari</h3>
+            <p class="mobile-step-text">
+              Real silver core electroplated in pure 24-carat gold. We verify each batch through rigorous burn-and-solvent laboratory standards, bearing an indelible guarantee seal.
+            </p>
+          </div>
+        </div>
+
+        <div class="mobile-loom-step-item">
+          <div class="mobile-step-num-badge">3</div>
+          <div class="mobile-step-body">
+            <h3 class="mobile-step-heading">The Korvai Interlocking Technique</h3>
+            <p class="mobile-step-text">
+              Two weavers work synchronously on both sides of the pit loom, interlocking border and body warps so seamlessly that no loose threads exist on the reverse drape.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Direct-to-Weaver Fair Trade Protocol Strip -->
+      <div class="mobile-fair-trade-strip">
+        <div class="mobile-fair-trade-left">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#63000D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <span>Direct-to-Weaver Fair Trade Protocol</span>
+        </div>
+        <a href="story.html" class="mobile-fair-trade-link">READ CHARTER &rarr;</a>
+      </div>
+
+      <!-- Master Loom Action Buttons -->
+      <div class="mobile-craft-btns" style="margin-top:18px;">
+        <button type="button" class="mobile-btn-primary" onclick="openVideoLoomModal()" style="width:100%; text-align:center;">
+          WATCH MASTER LOOM FILM (4 MIN)
+        </button>
+        <a href="story.html" class="mobile-btn-secondary" style="display:block; text-align:center; width:100%;">
+          READ WEAVER GUILD ARCHIVES &rarr;
+        </a>
       </div>
     </div>
   </section>

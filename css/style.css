@@ -19,7 +19,7 @@
   --color-footer-bg: #1B1514;
   --color-footer-border: rgba(255, 255, 255, 0.1);
 
-  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   --max-width: 1280px;
@@ -135,42 +135,17 @@ img {
   gap: 20px;
 }
 
-/* Brand Logo (Royal Handloom Crest & Grand Typography) */
+/* Brand Logo (Pure Refined Typography - No Icon) */
 .brand-logo {
   display: flex;
-  align-items: center;
-  gap: 13px;
+  flex-direction: column;
   text-decoration: none !important;
   flex-shrink: 0;
 }
 
-.brand-crest {
-  width: 46px;
-  height: 46px;
-  background: linear-gradient(135deg, #63000D 0%, #460009 100%);
-  border: 1.5px solid var(--color-gold);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 3px 10px rgba(99, 0, 13, 0.22);
-  flex-shrink: 0;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.brand-logo:hover .brand-crest {
-  transform: scale(1.06) rotate(4deg);
-  box-shadow: 0 4px 14px rgba(197, 154, 69, 0.35);
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-}
-
 .brand-name {
   font-family: var(--font-serif);
-  font-size: 27px;
+  font-size: 26px;
   font-weight: 800;
   color: var(--color-maroon);
   letter-spacing: 0.8px;
@@ -178,9 +153,9 @@ img {
 }
 
 .brand-sub {
-  font-size: 8.5px;
+  font-size: 8px;
   font-weight: 700;
-  letter-spacing: 2.2px;
+  letter-spacing: 2px;
   color: var(--color-gold-deep);
   text-transform: uppercase;
   margin-top: 4px;
@@ -438,6 +413,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 80px;
 }
 
 .section-frame {
@@ -1391,42 +1367,26 @@ img {
 
   .brand-logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 9px;
-    margin: 0;
-    flex: 1;
     justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    flex: 1;
     min-width: 0;
   }
 
-  .brand-crest {
-    width: 36px;
-    height: 36px;
-    border: 1.2px solid var(--color-gold);
-    flex-shrink: 0;
-  }
-
-  .brand-crest svg {
-    width: 22px;
-    height: 22px;
-  }
-
-  .brand-text {
-    display: flex;
-    flex-direction: column;
-  }
-
   .brand-name {
-    font-size: 19px;
-    letter-spacing: 0.6px;
+    font-size: 21px;
+    letter-spacing: 0.8px;
     line-height: 1.05;
     white-space: nowrap;
   }
 
   .brand-sub {
-    font-size: 7px;
-    letter-spacing: 1.4px;
-    margin-top: 2px;
+    font-size: 7.5px;
+    letter-spacing: 1.6px;
+    margin-top: 3px;
     white-space: nowrap;
   }
 
@@ -1607,7 +1567,7 @@ img {
   }
 
   .mobile-sec-title {
-    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    font-family: var(--font-serif);
     font-size: 27px;
     font-weight: 700;
     color: var(--color-maroon);
@@ -1692,7 +1652,7 @@ img {
   }
 
   .mobile-hero-title {
-    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    font-family: var(--font-serif);
     font-size: 32px;
     font-weight: 700;
     color: #FFFFFF;
@@ -1761,7 +1721,7 @@ img {
   }
 
   .mobile-stat-num {
-    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    font-family: var(--font-serif);
     font-size: 19px;
     font-weight: 700;
     color: var(--color-gold-light);
@@ -1822,7 +1782,7 @@ img {
   }
 
   .mobile-featured-name {
-    font-family: 'Cormorant Garamond', var(--font-serif);
+    font-family: var(--font-serif);
     font-size: 15px;
     font-weight: 700;
     color: var(--color-maroon);
@@ -1889,7 +1849,7 @@ img {
   }
 
   .mobile-concierge-title {
-    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    font-family: var(--font-serif);
     font-size: 23px;
     font-weight: 700;
     color: #FFFFFF;
@@ -2042,7 +2002,7 @@ img {
   }
 
   .mobile-prod-title {
-    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    font-family: var(--font-serif);
     font-size: 14.5px;
     font-weight: 700;
     color: var(--color-maroon);
@@ -2094,64 +2054,324 @@ img {
     cursor: pointer;
   }
 
-  /* Everyday Grace Feature */
-  .mobile-everyday-cards {
+  /* --------------------------------------------------------------------------
+     Section 5: Everyday Grace Spotlight (Mobile)
+     -------------------------------------------------------------------------- */
+  .mobile-everyday-editorial-card {
+    background: #FFFFFF;
+    border: 1px solid #EBE2D8;
+    border-top: 3.5px solid var(--color-maroon);
+    border-radius: 8px;
+    padding: 22px 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 18px rgba(99, 0, 13, 0.05);
+  }
+
+  .mobile-ed-badge {
+    background: #FAF3EC;
+    border: 1px solid #E5D7C7;
+    color: var(--color-maroon);
+    font-family: var(--font-sans);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    display: inline-block;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  .mobile-ed-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 21px;
+    font-weight: 700;
+    color: #201817;
+    line-height: 1.28;
+    margin-bottom: 10px;
+  }
+
+  .mobile-ed-title em {
+    font-style: italic;
+    color: var(--color-maroon);
+  }
+
+  .mobile-ed-p {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: #5C4D4A;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .mobile-ed-features {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
+    border-top: 1px dashed #E5DCD4;
+    padding-top: 14px;
   }
 
-  .mobile-everyday-banner {
-    position: relative;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  .mobile-ed-feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
   }
 
-  .mobile-banner-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px 14px;
-    background: linear-gradient(180deg, transparent 0%, rgba(20,10,10,0.85) 100%);
-    color: #FFFFFF;
+  .mobile-ed-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FAF2E6;
+    border: 1px solid #E6D2B5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #8C6E18;
+    padding: 3px;
+    margin-top: 1px;
+  }
+
+  .mobile-ed-feature-item strong {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--color-maroon);
+    display: block;
+    line-height: 1.3;
+    margin-bottom: 2px;
+  }
+
+  .mobile-ed-feature-item span {
+    font-family: var(--font-sans);
     font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    color: #6E5F5C;
+    line-height: 1.45;
+    display: block;
   }
 
-  /* Craftsmanship Card */
-  .mobile-craft-card {
+  /* Everyday Products Layout (Luxury Horizontal Track) */
+  .mobile-everyday-prods-grid {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 4px 2px 14px;
+    margin-top: 6px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .mobile-everyday-prods-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-everyday-prod-card {
+    flex: 0 0 74%;
+    scroll-snap-align: start;
     background: #FFFFFF;
+    border: 1px solid #EBE2D8;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
-    border: 1px solid #E2D7CF;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
   }
 
-  .mobile-craft-img {
+  .mobile-everyday-prod-card:active {
+    transform: scale(0.98);
+  }
+
+  .mobile-ed-thumb {
     width: 100%;
-    max-height: 240px;
+    aspect-ratio: 1 / 1.25;
     overflow: hidden;
+    background: #FAF8F5;
   }
 
-  .mobile-craft-img img {
+  .mobile-ed-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .mobile-ed-info {
+    padding: 12px 14px 14px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .mobile-ed-cat {
+    font-family: var(--font-sans);
+    font-size: 8.5px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: var(--color-gold-deep);
+    text-transform: uppercase;
+  }
+
+  .mobile-ed-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-maroon);
+    line-height: 1.25;
+    margin: 3px 0 6px;
+  }
+
+  .mobile-ed-price {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 700;
+    color: #201817;
+    margin-top: auto;
+  }
+
+  /* --------------------------------------------------------------------------
+     Section 6: The Craftsmanship & Weaver Story (Mobile Handloom Mastery)
+     -------------------------------------------------------------------------- */
+  .mobile-weaver-hero-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #E2D7CF;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .mobile-weaver-img-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .mobile-weaver-img-wrap img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .mobile-craft-body {
-    padding: 20px 16px;
-    text-align: center;
+  .mobile-loom-steps-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .mobile-loom-step-item {
+    background: #FFFFFF;
+    border: 1px solid #EBE2D8;
+    border-radius: 10px;
+    padding: 16px 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    box-shadow: 0 3px 12px rgba(99, 0, 13, 0.04);
+  }
+
+  .mobile-step-num-badge {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #63000D 0%, #460009 100%);
+    color: #F4D58E;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1.5px solid rgba(244, 213, 142, 0.5);
+    box-shadow: 0 3px 8px rgba(99, 0, 13, 0.25);
+  }
+
+  .mobile-step-body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .mobile-step-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-maroon);
+    line-height: 1.25;
+    margin: 0 0 6px 0;
+  }
+
+  .mobile-step-text {
+    font-family: var(--font-sans);
+    font-size: 12.5px;
+    color: #5C4C49;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  .mobile-fair-trade-strip {
+    background: #FAF5EE;
+    border: 1px solid #E3D5C5;
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  }
+
+  .mobile-fair-trade-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--color-maroon);
+  }
+
+  .mobile-fair-trade-link {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    background: var(--color-maroon);
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-decoration: none !important;
   }
 
   .mobile-craft-btns {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 16px;
+    margin-top: 18px;
+  }
+
+  .mobile-craft-btns .mobile-btn-secondary {
+    background: #FFFFFF;
+    border: 1.5px solid var(--color-maroon);
+    color: var(--color-maroon);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    padding: 13px 20px;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(99, 0, 13, 0.06);
+    text-decoration: none !important;
   }
 
   /* Testimonials */

@@ -36,25 +36,8 @@
       </button>
 
       <a href="index.html" class="brand-logo" aria-label="Fashion Village Home">
-        <div class="brand-crest">
-          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <g transform="rotate(-45 16 16)">
-              <path d="M4 16 C9 12, 23 12, 28 16 C23 20, 9 20, 4 16 Z" fill="#E8B86D" stroke="#FFFFFF" stroke-width="0.8"/>
-              <path d="M7 16 C11 13.5, 21 13.5, 25 16 C21 18.5, 11 18.5, 7 16 Z" fill="#63000D"/>
-              <rect x="12" y="14.5" width="8" height="3" rx="1.5" fill="#F4D58E"/>
-              <line x1="16" y1="12" x2="16" y2="8" stroke="#F4D58E" stroke-width="1"/>
-              <line x1="16" y1="20" x2="16" y2="24" stroke="#F4D58E" stroke-width="1"/>
-            </g>
-            <circle cx="16" cy="4" r="1.4" fill="#F4D58E"/>
-            <circle cx="16" cy="28" r="1.4" fill="#F4D58E"/>
-            <circle cx="4" cy="16" r="1.4" fill="#F4D58E"/>
-            <circle cx="28" cy="16" r="1.4" fill="#F4D58E"/>
-          </svg>
-        </div>
-        <div class="brand-text">
-          <span class="brand-name">FASHION VILLAGE</span>
-          <span class="brand-sub">ROYAL HANDLOOM SILKS &bull; ESTD 1980</span>
-        </div>
+        <span class="brand-name">FASHION VILLAGE</span>
+        <span class="brand-sub">ROYAL HANDLOOM SILKS &bull; ESTD 1980</span>
       </a>
 
       <div class="search-container">
@@ -94,26 +77,74 @@
 
     <!-- Mobile Craftsmanship Story -->
     <div class="mobile-only mobile-section-padding">
-      <div class="mobile-craft-card">
-        <div class="mobile-craft-img">
-          <img src="assets/mobile/weaver.png" alt="Master Artisan on Handloom Pit Loom">
-        </div>
-        <div class="mobile-craft-body">
-          <span class="mobile-sec-eyebrow" style="color:var(--color-gold-deep);">THE WEAVER STORY</span>
-          <h2 class="mobile-sec-title">Preserving Generational Heritage</h2>
-          <p class="mobile-sec-desc">
-            Every drape at Fashion Village is handwoven by master artisan families across 45 years of generational guild mastery, safeguarding authentic South Asian loom traditions.
-          </p>
+      <div class="mobile-section-header">
+        <span class="mobile-sec-eyebrow">ROOTED IN TRADITION</span>
+        <h2 class="mobile-sec-title">Generations of Loom Mastery</h2>
+        <div class="mobile-sec-divider"></div>
+        <p class="mobile-sec-desc">
+          Every yardage woven at Fashion Village tells the story of an artisan family that has passed down warp and weft calibration through five uninterrupted centuries.
+        </p>
+      </div>
 
-          <div class="mobile-craft-btns">
-            <button type="button" class="mobile-btn-primary" onclick="openVideoLoomModal()" style="width:100%; text-align:center;">
-              WATCH MASTER LOOM FILM (4 MIN)
-            </button>
-            <a href="concierge.html" class="mobile-btn-secondary" style="display:block; text-align:center; width:100%;">
-              BOOK ATELIER VIDEO TRIAL &rarr;
-            </a>
+      <!-- Master Weaver Real Photo Card -->
+      <div class="mobile-weaver-hero-card">
+        <div class="mobile-weaver-img-wrap">
+          <img src="assets/mobile/weaver_clean.png" alt="Master Weaver Shri Karunakaran on Traditional Pit Loom">
+        </div>
+      </div>
+
+      <!-- 3 Generational Mastery Steps -->
+      <div class="mobile-loom-steps-stack">
+        <div class="mobile-loom-step-item">
+          <div class="mobile-step-num-badge">1</div>
+          <div class="mobile-step-body">
+            <h3 class="mobile-step-heading">Consecrated Mulberry Sericulture</h3>
+            <p class="mobile-step-text">
+              Sourced from highest-grade domestic silkworms in Karnataka. The unrefined filament possesses natural tensile strength, ensuring each saree endures for generations without fabric degradation.
+            </p>
           </div>
         </div>
+
+        <div class="mobile-loom-step-item">
+          <div class="mobile-step-num-badge">2</div>
+          <div class="mobile-step-body">
+            <h3 class="mobile-step-heading">Silver-Core Tested Zari</h3>
+            <p class="mobile-step-text">
+              Real silver core electroplated in pure 24-carat gold. We verify each batch through rigorous burn-and-solvent laboratory standards, bearing an indelible guarantee seal.
+            </p>
+          </div>
+        </div>
+
+        <div class="mobile-loom-step-item">
+          <div class="mobile-step-num-badge">3</div>
+          <div class="mobile-step-body">
+            <h3 class="mobile-step-heading">The Korvai Interlocking Technique</h3>
+            <p class="mobile-step-text">
+              Two weavers work synchronously on both sides of the pit loom, interlocking border and body warps so seamlessly that no loose threads exist on the reverse drape.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Direct-to-Weaver Fair Trade Protocol Strip -->
+      <div class="mobile-fair-trade-strip">
+        <div class="mobile-fair-trade-left">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#63000D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <span>Direct-to-Weaver Fair Trade Protocol</span>
+        </div>
+        <a href="story.html" class="mobile-fair-trade-link">READ CHARTER &rarr;</a>
+      </div>
+
+      <!-- Master Loom Action Buttons -->
+      <div class="mobile-craft-btns" style="margin-top:18px;">
+        <button type="button" class="mobile-btn-primary" onclick="openVideoLoomModal()" style="width:100%; text-align:center;">
+          WATCH MASTER LOOM FILM (4 MIN)
+        </button>
+        <a href="concierge.html" class="mobile-btn-secondary" style="display:block; text-align:center; width:100%;">
+          BOOK ATELIER VIDEO TRIAL &rarr;
+        </a>
       </div>
     </div>
   </main>
